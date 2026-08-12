@@ -107,25 +107,6 @@ Location-aware platform to find medicine availability across pharmacies in Addis
 
 </details>
 
----
-
-## ⭐ Repo Highlights
-
-<p align="center">
-  <a href="https://github.com/kaluabiyu-wq/TmsApi"><img src="https://img.shields.io/github/stars/kaluabiyu-wq/TmsApi?style=social" /></a>
-  <a href="https://github.com/kaluabiyu-wq/tms-client"><img src="https://img.shields.io/github/stars/kaluabiyu-wq/tms-client?style=social" /></a>
-  <a href="https://github.com/kaluabiyu-wq/PMFApi"><img src="https://img.shields.io/github/stars/kaluabiyu-wq/PMFApi?style=social" /></a>
-  <a href="https://github.com/kaluabiyu-wq/Pmf-Client"><img src="https://img.shields.io/github/stars/kaluabiyu-wq/Pmf-Client?style=social" /></a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/last-commit/kaluabiyu-wq/TmsApi?label=TmsApi%20last%20commit&style=flat-square"/>
-  <img src="https://img.shields.io/github/last-commit/kaluabiyu-wq/PMFApi?label=PMFApi%20last%20commit&style=flat-square"/>
-</p>
-
-*Star badges are live — they'll show 0 until someone stars the repo, then update automatically.*
-
----
 
 ## ❓ FAQ
 
