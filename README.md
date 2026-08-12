@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Backend-focused%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Always+learning%2C+always+shipping." alt="Typing SVG" />
@@ -17,10 +17,10 @@
 
 ## 👨‍💻 About Me
 
-Backend-focused developer building production-style, full-stack applications on the **.NET + Angular** stack, with a strong interest in system and database design.
+Fullstack developer building production-style applications end-to-end on the **.NET + Angular** stack — from API and database design through to the client — with a strong interest in system architecture.
 
-- 🎓 Currently working through a structured backend development curriculum: **C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 with PostgreSQL**
-- 🏗️ Building **TMS (Training Management System)** — full-stack app, ASP.NET Core 10 API + Angular 22 client
+- 🎓 Currently working through a structured fullstack development curriculum: **C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 with PostgreSQL, Angular**
+- 🏗️ Building **TMS (Training Management System)** — fullstack app, ASP.NET Core 10 API + Angular 22 client
 - 💊 Designing **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa
 - 📍 Based in Addis Ababa, Ethiopia
 
@@ -38,7 +38,7 @@ Backend-focused developer building production-style, full-stack applications on 
 <summary><b>🎓 Training Management System (TMS)</b> — click to collapse</summary>
 <br/>
 
-Full-stack training/course enrollment platform for a fictional training institution (CTBE).
+Fullstack training/course enrollment platform for a fictional training institution (CTBE).
 
 | Layer | Highlights |
 |---|---|
@@ -136,7 +136,7 @@ C# 14 / .NET 10 fundamentals through to advanced patterns — Clean Architecture
 <details>
 <summary><b>Am I open to collaborating or job opportunities?</b></summary>
 <br/>
-Yes — I'm particularly interested in backend/full-stack roles working with .NET and Angular. Feel free to reach out via email or LinkedIn above.
+Yes — I'm particularly interested in fullstack roles working with .NET and Angular. Feel free to reach out via email or LinkedIn above.
 </details>
 
 <details>
