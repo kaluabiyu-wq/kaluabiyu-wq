@@ -107,6 +107,46 @@ Location-aware platform to find medicine availability across pharmacies in Addis
 
 ---
 
+## ⭐ Repo Highlights
+
+<p align="center">
+  <a href="https://github.com/kaluabiyu-wq/TmsApi"><img src="https://img.shields.io/github/stars/kaluabiyu-wq/TmsApi?style=social" /></a>
+  <a href="https://github.com/kaluabiyu-wq/tms-client"><img src="https://img.shields.io/github/stars/kaluabiyu-wq/tms-client?style=social" /></a>
+  <a href="https://github.com/kaluabiyu-wq/PMFApi"><img src="https://img.shields.io/github/stars/kaluabiyu-wq/PMFApi?style=social" /></a>
+  <a href="https://github.com/kaluabiyu-wq/Pmf-Client"><img src="https://img.shields.io/github/stars/kaluabiyu-wq/Pmf-Client?style=social" /></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/kaluabiyu-wq/TmsApi?label=TmsApi%20last%20commit&style=flat-square"/>
+  <img src="https://img.shields.io/github/last-commit/kaluabiyu-wq/PMFApi?label=PMFApi%20last%20commit&style=flat-square"/>
+</p>
+
+*Star badges are live — they'll show 0 until someone stars the repo, then update automatically.*
+
+---
+
+## ❓ FAQ
+
+<details>
+<summary><b>What am I currently learning?</b></summary>
+<br/>
+C# 14 / .NET 10 fundamentals through to advanced patterns — Clean Architecture, CQRS/MediatR, and async messaging — applied directly to TMS rather than isolated exercises.
+</details>
+
+<details>
+<summary><b>Am I open to collaborating or job opportunities?</b></summary>
+<br/>
+Yes — I'm particularly interested in backend/full-stack roles working with .NET and Angular. Feel free to reach out via email or LinkedIn above.
+</details>
+
+<details>
+<summary><b>What's the tech stack behind TMS, in one line?</b></summary>
+<br/>
+ASP.NET Core 10 API (Clean Architecture + CQRS/MediatR + SignalR) talking to an Angular 22 zoneless client (signals + NgRx SignalStore).
+</details>
+
+---
+
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -139,6 +179,20 @@ Location-aware platform to find medicine availability across pharmacies in Addis
 <img src="https://raw.githubusercontent.com/kaluabiyu-wq/kaluabiyu-wq/output/github-contribution-grid-snake.svg" alt="snake animation" width="100%"/>
 
 </div>
+
+---
+
+## 💬 Say Hi
+
+Leave a comment below — powered by GitHub Discussions, so it's a real back-and-forth, not a static widget.
+
+<!--
+  To activate: enable "Discussions" on your kaluabiyu-wq/kaluabiyu-wq repo,
+  then install the giscus app (giscus.app), grab your repo-id/category-id,
+  and paste the generated <script> tag right here.
+-->
+
+<p align="center"><i>🔧 Comments widget not yet wired up — see setup note below.</i></p>
 
 ---
 
