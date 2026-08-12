@@ -10,6 +10,8 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=kaluabiyu-wq&color=512BD4&style=for-the-badge&label=PROFILE+VIEWS)
 [![GitHub followers](https://img.shields.io/github/followers/kaluabiyu-wq?label=Followers&style=for-the-badge&color=DD0031)](https://github.com/kaluabiyu-wq)
+[![Public Repos](https://img.shields.io/badge/dynamic/json?label=Repos&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fkaluabiyu-wq&color=512BD4&style=for-the-badge)](https://github.com/kaluabiyu-wq?tab=repositories)
+![Open to Work](https://img.shields.io/badge/Open%20to%20Work-success?style=for-the-badge&logo=briefcase&logoColor=white)
 
 </div>
 
