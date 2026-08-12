@@ -162,41 +162,9 @@ ASP.NET Core 10 API (Clean Architecture + CQRS/MediatR + SignalR) talking to an 
 
 </div>
 
-<details>
-<summary><b>🏆 GitHub Trophies</b></summary>
-<br/>
-<div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=kaluabiyu-wq&theme=tokyonight&no-frame=true&row=1&column=6" />
 
-</div>
-</details>
 
----
-
-<div align="center">
-
-### 🐍 Contribution Snake
-<!-- Requires a one-time GitHub Action — see setup note below -->
-<img src="https://raw.githubusercontent.com/kaluabiyu-wq/kaluabiyu-wq/output/github-contribution-grid-snake.svg" alt="snake animation" width="100%"/>
-
-</div>
-
----
-
-## 💬 Say Hi
-
-Leave a comment below — powered by GitHub Discussions, so it's a real back-and-forth, not a static widget.
-
-<!--
-  To activate: enable "Discussions" on your kaluabiyu-wq/kaluabiyu-wq repo,
-  then install the giscus app (giscus.app), grab your repo-id/category-id,
-  and paste the generated <script> tag right here.
--->
-
-<p align="center"><i>🔧 Comments widget not yet wired up — see setup note below.</i></p>
-
----
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:DD0031,100:512BD4&height=100&section=footer"/>
