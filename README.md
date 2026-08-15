@@ -183,7 +183,7 @@ Starring the repos above is the biggest help — it's the single strongest signa
 
 **📧 Email**
 <br/>
-Best for job offers, collaboration proposals, or anything that needs a real reply.
+for job offers, collaboration proposals, or anything that needs a real reply.
 <br/>
 <a href="mailto:kaluabiyu@gmail.com">kaluabiyu@gmail.com</a>
 
@@ -192,7 +192,7 @@ Best for job offers, collaboration proposals, or anything that needs a real repl
 
 **💼 LinkedIn**
 <br/>
-Best for professional networking and recruiter outreach.
+ for professional networking and recruiter outreach.
 <br/>
 <a href="https://linkedin.com/in/kalu-abiyu">/in/kalu-abiyu</a>
 
@@ -201,7 +201,7 @@ Best for professional networking and recruiter outreach.
 
 **📸 Instagram**
 <br/>
-Best for a more casual hello or to see what I'm up to outside of code.
+ for a more casual hello or to see what I'm up to outside of code.
 <br/>
 <a href="https://instagram.com/Kalu_abi77">@Kalu_abi77</a>
 
