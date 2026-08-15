@@ -3,34 +3,49 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Always+learning%2C+always+shipping." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
 </a>
 
 <br/>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=kaluabiyu-wq&color=512BD4&style=for-the-badge&label=PROFILE+VIEWS)
-[![GitHub followers](https://img.shields.io/github/followers/kaluabiyu-wq?label=Followers&style=for-the-badge&color=DD0031)](https://github.com/kaluabiyu-wq)
+[![GitHub followers](https://img.shields.io/github/followers/kaluabiyu-wq?label=Followers&style=for-the-badge&color=DD0031)](https://github.com/kaluabiyu-wq?tab=followers)
 [![Public Repos](https://img.shields.io/badge/dynamic/json?label=Repos&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fkaluabiyu-wq&color=512BD4&style=for-the-badge)](https://github.com/kaluabiyu-wq?tab=repositories)
 ![Open to Work](https://img.shields.io/badge/Open%20to%20Work-success?style=for-the-badge&logo=briefcase&logoColor=white)
+
+<a href="https://github.com/kaluabiyu-wq?tab=followers">
+  <img src="https://img.shields.io/badge/Follow%20me-@kaluabiyu--wq-181717?style=for-the-badge&logo=github" />
+</a>
 
 </div>
 
 ---
 
-## 👨‍💻 About Me
+## 👋 About Me
 
 Fullstack developer building production-style applications end-to-end on the **.NET + Angular** stack — from API and database design through to the client — with a strong interest in system architecture.
 
-- 🎓 Currently working through a structured fullstack development curriculum: **C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 with PostgreSQL, Angular**
-- 🏗️ Building **TMS (Training Management System)** — fullstack app, ASP.NET Core 10 API + Angular 22 client
+- 🎓 Working through a structured fullstack curriculum: **C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 with PostgreSQL, Angular 22**
+- 🏗️ Building **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + Angular 22 zoneless client
 - 💊 Designing **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa
 - 📍 Based in Addis Ababa, Ethiopia
+- ⚡ Right now: wiring the M10 Identity handshake (HttpOnly auth cookie + antiforgery) between the TMS API and Angular client
 
 <p align="left">
   <a href="mailto:kaluabiyu@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://linkedin.com/in/kalu-abiyu"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://instagram.com/Kalu_abi77"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
 </p>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/kaluabiyu-wq/kaluabiyu-wq/output/github-contribution-grid-snake.svg" alt="contribution snake" width="100%"/>
+</div>
+
+> Animated version of your contribution graph. Requires a one-time GitHub Action setup — see **Setup Notes** at the bottom of this file for the workflow file to add.
 
 ---
 
@@ -47,6 +62,7 @@ Fullstack training/course enrollment platform for a fictional training instituti
 | **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — layered Clean Architecture (Domain/Application/Infrastructure/Api), CQRS with MediatR, FluentValidation, HATEOAS, versioned REST endpoints, RFC 9457 ProblemDetails |
 | **Real-time** | SignalR typed hubs for enrollment/transcript notifications, async request-reply pattern for long-running work with idempotency keys |
 | **Client** | Angular 22, standalone components, zoneless change detection, signals, NgRx SignalStore, reactive forms, `@defer` blocks with Angular Material |
+| **Auth** | HttpOnly auth cookie + antiforgery (XSRF) handshake between API and client, in progress |
 
 **Repos:**
 [![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
@@ -54,13 +70,27 @@ Fullstack training/course enrollment platform for a fictional training instituti
 [![TmsCore](https://img.shields.io/badge/TmsCore-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsCore)
 [![tms-client](https://img.shields.io/badge/tms--client-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/tms-client)
 
+**Curriculum module progress:**
+
+| Module | Focus | Status |
+|---|---|---|
+| M1 | C# 14 / .NET 10 fundamentals | ✅ Complete |
+| M2 | TypeScript fundamentals | ✅ Complete |
+| M4 | Middleware, DI, config | ✅ Complete |
+| M5 | EF Core, LINQ, PostgreSQL schema | ✅ Complete |
+| M6 | REST API design, HATEOAS, docs | ✅ Complete |
+| M7 | Load testing, async request-reply, SignalR | ✅ Complete |
+| M8 | Angular fundamentals, client scaffolding | ✅ Complete |
+| M9 | NgRx SignalStore, `@defer`, instructor dashboard | ✅ Complete |
+| M10 | Full-stack auth integration (Identity handshake) | 🔄 In progress |
+
 </details>
 
 <details>
 <summary><b>💊 PMAFS — Pharmacy Medicine Availability Finding System</b> — click to expand</summary>
 <br/>
 
-Location-aware platform to find medicine availability across pharmacies in Addis Ababa, using sub-city/woreda location data.
+Location-aware platform to find medicine availability across pharmacies in Addis Ababa, using sub-city/woreda location data. A parallel, independent project mirroring the TMS curriculum structure.
 
 - Relational database design
 - ASP.NET Core API scaffolding
@@ -107,13 +137,22 @@ Location-aware platform to find medicine availability across pharmacies in Addis
 
 </details>
 
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=kaluabiyu-wq&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8" width="100%"/>
+</div>
+
+---
 
 ## ❓ FAQ
 
 <details>
 <summary><b>What am I currently learning?</b></summary>
 <br/>
-C# 14 / .NET 10 fundamentals through to advanced patterns — Clean Architecture, CQRS/MediatR, and async messaging — applied directly to TMS rather than isolated exercises.
+C# 14 / .NET 10 fundamentals through to advanced patterns — Clean Architecture, CQRS/MediatR, and async messaging — applied directly to TMS rather than isolated exercises. Currently on Module 10 (full-stack auth integration).
 </details>
 
 <details>
@@ -126,6 +165,12 @@ Yes — I'm particularly interested in fullstack roles working with .NET and Ang
 <summary><b>What's the tech stack behind TMS, in one line?</b></summary>
 <br/>
 ASP.NET Core 10 API (Clean Architecture + CQRS/MediatR + SignalR) talking to an Angular 22 zoneless client (signals + NgRx SignalStore).
+</details>
+
+<details>
+<summary><b>How can you support this profile?</b></summary>
+<br/>
+Starring the repos above is the biggest help — it's the single strongest signal for both GitHub's discovery algorithm and anyone evaluating the work. A follow keeps you posted as new modules ship.
 </details>
 
 ---
@@ -143,10 +188,19 @@ ASP.NET Core 10 API (Clean Architecture + CQRS/MediatR + SignalR) talking to an 
 
 </div>
 
+---
 
+## 💬 Ask Me Anything
 
+<div align="center">
+<img src="https://readme-quotes.vercel.app/api?type=random&theme=tokyonight" width="60%"/>
+</div>
 
+Open an issue on this profile repo (`kaluabiyu-wq/kaluabiyu-wq`) tagged **#AMA** and I'll answer it directly here or on LinkedIn — a low-friction way for recruiters or other devs to start a conversation.
+
+---
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:DD0031,100:512BD4&height=100&section=footer"/>
 </div>
+
