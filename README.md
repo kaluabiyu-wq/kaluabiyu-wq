@@ -13,10 +13,6 @@
 [![Public Repos](https://img.shields.io/badge/dynamic/json?label=Repos&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fkaluabiyu-wq&color=512BD4&style=for-the-badge)](https://github.com/kaluabiyu-wq?tab=repositories)
 ![Open to Work](https://img.shields.io/badge/Open%20to%20Work-success?style=for-the-badge&logo=briefcase&logoColor=white)
 
-<a href="https://github.com/kaluabiyu-wq?tab=followers">
-  <img src="https://img.shields.io/badge/Follow%20me-@kaluabiyu--wq-181717?style=for-the-badge&logo=github" />
-</a>
-
 </div>
 
 ---
@@ -30,22 +26,6 @@ Fullstack developer building production-style applications end-to-end on the **.
 - 💊 Designing **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa
 - 📍 Based in Addis Ababa, Ethiopia
 - ⚡ Right now: wiring the M10 Identity handshake (HttpOnly auth cookie + antiforgery) between the TMS API and Angular client
-
-<p align="left">
-  <a href="mailto:kaluabiyu@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://linkedin.com/in/kalu-abiyu"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://instagram.com/Kalu_abi77"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
-</p>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/kaluabiyu-wq/kaluabiyu-wq/output/github-contribution-grid-snake.svg" alt="contribution snake" width="100%"/>
-</div>
-
-> Animated version of your contribution graph. Requires a one-time GitHub Action setup — see **Setup Notes** at the bottom of this file for the workflow file to add.
 
 ---
 
@@ -70,19 +50,6 @@ Fullstack training/course enrollment platform for a fictional training instituti
 [![TmsCore](https://img.shields.io/badge/TmsCore-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsCore)
 [![tms-client](https://img.shields.io/badge/tms--client-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/tms-client)
 
-**Curriculum module progress:**
-
-| Module | Focus | Status |
-|---|---|---|
-| M1 | C# 14 / .NET 10 fundamentals | ✅ Complete |
-| M2 | TypeScript fundamentals | ✅ Complete |
-| M4 | Middleware, DI, config | ✅ Complete |
-| M5 | EF Core, LINQ, PostgreSQL schema | ✅ Complete |
-| M6 | REST API design, HATEOAS, docs | ✅ Complete |
-| M7 | Load testing, async request-reply, SignalR | ✅ Complete |
-| M8 | Angular fundamentals, client scaffolding | ✅ Complete |
-| M9 | NgRx SignalStore, `@defer`, instructor dashboard | ✅ Complete |
-| M10 | Full-stack auth integration (Identity handshake) | 🔄 In progress |
 
 </details>
 
@@ -139,10 +106,20 @@ Location-aware platform to find medicine availability across pharmacies in Addis
 
 ---
 
-## 🏆 GitHub Trophies
+## 📌 Pinned Repos
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=kaluabiyu-wq&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8" width="100%"/>
+
+<a href="https://github.com/kaluabiyu-wq/TmsApi">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=TmsApi&theme=tokyonight&hide_border=true" width="48%"/>
+</a>
+<a href="https://github.com/kaluabiyu-wq/tms-clients2">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=tms-clients2&theme=tokyonight&hide_border=true" width="48%"/>
+</a>
+<a href="https://github.com/kaluabiyu-wq/PMFApi">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=PMFApi&theme=tokyonight&hide_border=true" width="48%"/>
+</a>
+
 </div>
 
 ---
@@ -190,13 +167,59 @@ Starring the repos above is the biggest help — it's the single strongest signa
 
 ---
 
-## 💬 Ask Me Anything
+## 📬 Contact Me
 
 <div align="center">
-<img src="https://readme-quotes.vercel.app/api?type=random&theme=tokyonight" width="60%"/>
+
+[![Email](https://img.shields.io/badge/Email-kaluabiyu%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaluabiyu@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-kalu--abiyu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kalu-abiyu)
+[![Instagram](https://img.shields.io/badge/Instagram-Kalu__abi77-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/Kalu_abi77)
+
 </div>
 
-Open an issue on this profile repo (`kaluabiyu-wq/kaluabiyu-wq`) tagged **#AMA** and I'll answer it directly here or on LinkedIn — a low-friction way for recruiters or other devs to start a conversation.
+<table align="center">
+<tr>
+<td align="center" width="33%">
+
+**📧 Email**
+<br/>
+Best for job offers, collaboration proposals, or anything that needs a real reply.
+<br/>
+<a href="mailto:kaluabiyu@gmail.com">kaluabiyu@gmail.com</a>
+
+</td>
+<td align="center" width="33%">
+
+**💼 LinkedIn**
+<br/>
+Best for professional networking and recruiter outreach.
+<br/>
+<a href="https://linkedin.com/in/kalu-abiyu">/in/kalu-abiyu</a>
+
+</td>
+<td align="center" width="33%">
+
+**📸 Instagram**
+<br/>
+Best for a more casual hello or to see what I'm up to outside of code.
+<br/>
+<a href="https://instagram.com/Kalu_abi77">@Kalu_abi77</a>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📝 Guestbook
+
+<div align="center">
+
+[![Leave a message](https://img.shields.io/badge/💬%20Leave%20a%20message-in%20the%20Guestbook-512BD4?style=for-the-badge)](https://github.com/kaluabiyu-wq/kaluabiyu-wq/discussions/1)
+
+</div>
+
+> GitHub strips `<script>`/`<iframe>` tags from READMEs, so comment widgets can't render inline on the page — this links out to a pinned **GitHub Discussions** thread instead, which works the same way in practice: one click, sign in with GitHub, leave a comment, it's visible to every visitor.
 
 ---
 
@@ -204,3 +227,41 @@ Open an issue on this profile repo (`kaluabiyu-wq/kaluabiyu-wq`) tagged **#AMA**
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:DD0031,100:512BD4&height=100&section=footer"/>
 </div>
 
+<!--
+===========================================================================
+SETUP NOTES — read before publishing
+===========================================================================
+
+1) PINNED REPO CARDS / GITHUB STATS / PROFILE VIEWS BADGE
+   These are all hosted, zero-setup services (Vercel/Heroku/Komarev) keyed
+   to your username and repo names — nothing to install, they just need
+   the repos to be public.
+
+2) GUESTBOOK (GitHub Discussions thread)
+   Enable Discussions on the kaluabiyu-wq/kaluabiyu-wq profile repo
+   (Settings → Features → Discussions). Create one thread titled
+   "Guestbook" and pin it, then copy its URL into the badge link above
+   (replace the placeholder /discussions/1). Anyone can reply with a
+   GitHub login — no separate account or comment-widget service needed,
+   and it keeps working even though scripts/iframes can't render
+   directly in a README.
+
+3) CONTACT ME SECTION
+   No setup required — the badges and table link directly to mailto:,
+   your LinkedIn profile, and your Instagram profile. Update the three
+   URLs/handles here if any of them ever change, and they'll stay in
+   sync since the badges and table both reference the same links.
+
+4) WHY THESE ADDITIONS HELP WITH FOLLOWERS
+   - The Pinned Repo Cards send clicks straight to your actual projects
+     instead of a generic badge row, which is what actually converts a
+     visit into a star.
+   - The Guestbook is the one place actual back-and-forth happens on the
+     profile — it converts a passive visit into a comment, which is a
+     much stronger signal of engagement than a follow click.
+   - A clear, low-friction Contact Me section removes the ambiguity of
+     "how do I actually reach this person," which is often the real
+     blocker between a recruiter/collaborator viewing the profile and
+     them following up.
+===========================================================================
+-->
