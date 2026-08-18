@@ -186,7 +186,6 @@ Starring the repos above is the biggest help — it's the single strongest signa
 for job offers, collaboration proposals, or anything that needs a real reply.
 <br/>
 <a href="mailto:kaluabiyu@gmail.com">kaluabiyu@gmail.com</a>
-
 </td>
 <td align="center" width="33%">
 
@@ -195,7 +194,6 @@ for job offers, collaboration proposals, or anything that needs a real reply.
  for professional networking and recruiter outreach.
 <br/>
 <a href="https://linkedin.com/in/kalu-abiyu">/in/kalu-abiyu</a>
-
 </td>
 <td align="center" width="33%">
 
@@ -204,7 +202,6 @@ for job offers, collaboration proposals, or anything that needs a real reply.
  for a more casual hello or to see what I'm up to outside of code.
 <br/>
 <a href="https://instagram.com/Kalu_abi77">@Kalu_abi77</a>
-
 </td>
 </tr>
 </table>
