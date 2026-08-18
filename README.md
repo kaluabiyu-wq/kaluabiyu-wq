@@ -159,7 +159,7 @@ Starring the repos above is the biggest help — it's the single strongest signa
 <img src="https://github-readme-stats.vercel.app/api?username=kaluabiyu-wq&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kaluabiyu-wq&layout=compact&theme=tokyonight&hide_border=true" width="30%"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=kaluabiyu-wq&theme=tokyonight&hide_border=true" width="49%"/>
+<img src= "https://streak-stats.demolab.com/?user=kaluabiyu-wq&theme=tokyonight&hide_border=true" width="49%"/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=kaluabiyu-wq&theme=tokyo-night&hide_border=true" width="100%"/>
 
