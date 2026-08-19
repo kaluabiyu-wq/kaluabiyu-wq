@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Debugging+the+Identity+handshake+%E2%80%94+M10;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -22,10 +22,10 @@
 Fullstack developer building production-style applications end-to-end on the **.NET + Angular** stack — from API and database design through to the client — with a strong interest in system architecture.
 
 - 🎓 Working through a structured fullstack curriculum: **C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 with PostgreSQL, Angular 22**
-- 🏗️ Building **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + Angular 22 zoneless client
+- 🏗️ Building **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + Angular 22 zoneless client (signals, NgRx SignalStore, `@defer`-loaded analytics dashboard)
 - 💊 Designing **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa
 - 📍 Based in Addis Ababa, Ethiopia
-- ⚡ Right now: wiring the M10 Identity handshake (HttpOnly auth cookie + antiforgery) between the TMS API and Angular client
+- ⚡ Right now: on **Module 10 (full-stack auth integration)** — traced the HttpOnly `tms_auth` cookie + antiforgery (XSRF) handshake through a chain of real bugs across both repos (missing `[ApiVersion]` attribute, a route missing its literal `v`, an XSRF header-name typo, `@Service()` used instead of `@Injectable()`), confirmed the corrected flow with a diagnostic call to `AuthService.login()`, and am now building the real `LoginComponent` and `/login` route that the app is still missing
 
 ---
 
@@ -41,8 +41,8 @@ Fullstack training/course enrollment platform for a fictional training instituti
 |---|---|
 | **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — layered Clean Architecture (Domain/Application/Infrastructure/Api), CQRS with MediatR, FluentValidation, HATEOAS, versioned REST endpoints, RFC 9457 ProblemDetails |
 | **Real-time** | SignalR typed hubs for enrollment/transcript notifications, async request-reply pattern for long-running work with idempotency keys |
-| **Client** | Angular 22, standalone components, zoneless change detection, signals, NgRx SignalStore, reactive forms, `@defer` blocks with Angular Material |
-| **Auth** | HttpOnly auth cookie + antiforgery (XSRF) handshake between API and client, in progress |
+| **Client** | Angular 22, standalone components, zoneless change detection, signals, NgRx SignalStore, reactive forms, `@defer` blocks with Angular Material — including an instructor analytics dashboard with a live Approved/Pending/Rejected chart |
+| **Auth** | HttpOnly auth cookie + antiforgery (XSRF) handshake between API and client — backend flow verified end-to-end; wiring up the client-side `LoginComponent` next |
 
 **Repos:**
 [![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
@@ -59,9 +59,10 @@ Fullstack training/course enrollment platform for a fictional training instituti
 
 Location-aware platform to find medicine availability across pharmacies in Addis Ababa, using sub-city/woreda location data. A parallel, independent project mirroring the TMS curriculum structure.
 
-- Relational database design
+- Relational database design — inventory freshness, reliability scoring, location-aware search
 - ASP.NET Core API scaffolding
 - Service interface architecture
+- A TypeScript/Node.js client exploring TypeScript 7.0, discriminated unions with the Temporal API, and Angular reactive forms
 
 **Repos:**
 [![PMFApi](https://img.shields.io/badge/PMFApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFApi)
@@ -129,7 +130,7 @@ Location-aware platform to find medicine availability across pharmacies in Addis
 <details>
 <summary><b>What am I currently learning?</b></summary>
 <br/>
-C# 14 / .NET 10 fundamentals through to advanced patterns — Clean Architecture, CQRS/MediatR, and async messaging — applied directly to TMS rather than isolated exercises. Currently on Module 10 (full-stack auth integration).
+Module 10 — full-stack auth integration. I've built the HttpOnly cookie + antiforgery handshake between the ASP.NET Core API and the Angular client, tracked down the routing and configuration bugs that were breaking it (a missing API version attribute, a route missing its literal "v", an XSRF header-name typo, a wrong Angular decorator), and confirmed the corrected flow works end-to-end. Next up: the actual <code>LoginComponent</code> and <code>/login</code> route, since the app currently has no real login UI wired to it.
 </details>
 
 <details>
