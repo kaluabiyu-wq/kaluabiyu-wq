@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Debugging+the+Identity+handshake+%E2%80%94+M10;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Refresh+Token+Rotation+%E2%80%94+M11;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -25,7 +25,7 @@ Fullstack developer building production-style applications end-to-end on the **.
 - 🏗️ Building **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + Angular 22 zoneless client (signals, NgRx SignalStore, `@defer`-loaded analytics dashboard)
 - 💊 Designing **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa
 - 📍 Based in Addis Ababa, Ethiopia
-- ⚡ Right now: on **Module 10 (full-stack auth integration)** — traced the HttpOnly `tms_auth` cookie + antiforgery (XSRF) handshake through a chain of real bugs across both repos (missing `[ApiVersion]` attribute, a route missing its literal `v`, an XSRF header-name typo, `@Service()` used instead of `@Injectable()`), confirmed the corrected flow with a diagnostic call to `AuthService.login()`, and am now building the real `LoginComponent` and `/login` route that the app is still missing
+- ⚡ Right now: on **Module 11, Session 2 — JWT Bearer Authentication & Refresh Token Rotation**, extending TMS's auth story beyond the cookie + antiforgery handshake built in Module 10 with token-based auth (short-lived access tokens, rotating refresh tokens) for scenarios the HttpOnly-cookie flow doesn't cover
 
 ---
 
@@ -42,7 +42,7 @@ Fullstack training/course enrollment platform for a fictional training instituti
 | **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — layered Clean Architecture (Domain/Application/Infrastructure/Api), CQRS with MediatR, FluentValidation, HATEOAS, versioned REST endpoints, RFC 9457 ProblemDetails |
 | **Real-time** | SignalR typed hubs for enrollment/transcript notifications, async request-reply pattern for long-running work with idempotency keys |
 | **Client** | Angular 22, standalone components, zoneless change detection, signals, NgRx SignalStore, reactive forms, `@defer` blocks with Angular Material — including an instructor analytics dashboard with a live Approved/Pending/Rejected chart |
-| **Auth** | HttpOnly auth cookie + antiforgery (XSRF) handshake between API and client — backend flow verified end-to-end; wiring up the client-side `LoginComponent` next |
+| **Auth** | M10: HttpOnly auth cookie + antiforgery (XSRF) handshake between API and client, verified end-to-end. M11 (current): JWT Bearer authentication with refresh token rotation, layered in alongside the cookie flow |
 
 **Repos:**
 [![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
@@ -57,12 +57,15 @@ Fullstack training/course enrollment platform for a fictional training instituti
 <summary><b>💊 PMAFS — Pharmacy Medicine Availability Finding System</b> — click to expand</summary>
 <br/>
 
-Location-aware platform to find medicine availability across pharmacies in Addis Ababa, using sub-city/woreda location data. A parallel, independent project mirroring the TMS curriculum structure.
+A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which medicines, at what price, and how reliable that stock information is. Built as two pieces: **PMFCore**, a small standalone project for prototyping the domain rules in isolation, and **PMFApi**, the full ASP.NET Core Web API that implements them for real.
 
-- Relational database design — inventory freshness, reliability scoring, location-aware search
-- ASP.NET Core API scaffolding
-- Service interface architecture
-- A TypeScript/Node.js client exploring TypeScript 7.0, discriminated unions with the Temporal API, and Angular reactive forms
+- **Domain rules, prototyped in PMFCore** — a `PharmacyRank` scoring algorithm that blends stock freshness and recency-of-update into a 1–4 reliability tier, plus validation rules baked into the models themselves (no medicine price ≤ 10, no blank names, reliability scores clamped to 1–100)
+- **Full CRUD API, built in PMFApi** — versioned controllers for Pharmacies, Medicines, Inventory, Locations, Users, Roles, Pharmacy Schedules, and User Feedback, backed by EF Core migrations against PostgreSQL (Npgsql)
+- **Inventory history & audit trail** — every price change on an inventory item is logged (old price, who changed it, when) via a dedicated `InventoryHistory` entity
+- **Location-aware search** — pharmacies and users are tied to a `Location` record carrying subcity, woreda, and lat/long coordinates
+- **Custom header-based auth scheme** — a `PharmacyAuthHandler` authentication handler backing four roles (Patient, Pharmacy Staff, Pharmacy Admin, System Admin)
+- **A reporting layer on top of it all** — a dedicated `ReportController` with EF Core aggregate queries: verified-pharmacy counts, medicine distribution per pharmacy, average price per medicine, pharmacies with no stock, and a top-5 pharmacies ranking by inventory count, reliability score, and lowest price
+- Global exception handling via `ProblemDetails`, request logging middleware, and Scalar/OpenAPI docs
 
 **Repos:**
 [![PMFApi](https://img.shields.io/badge/PMFApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFApi)
@@ -90,6 +93,7 @@ Location-aware platform to find medicine availability across pharmacies in Addis
 ![EF Core](https://img.shields.io/badge/-EF%20Core-512BD4?style=flat)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![SignalR](https://img.shields.io/badge/-SignalR-512BD4?style=flat)
+![JWT](https://img.shields.io/badge/-JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
 
 **Frontend**
 ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat&logo=angular&logoColor=white)
@@ -130,7 +134,7 @@ Location-aware platform to find medicine availability across pharmacies in Addis
 <details>
 <summary><b>What am I currently learning?</b></summary>
 <br/>
-Module 10 — full-stack auth integration. I've built the HttpOnly cookie + antiforgery handshake between the ASP.NET Core API and the Angular client, tracked down the routing and configuration bugs that were breaking it (a missing API version attribute, a route missing its literal "v", an XSRF header-name typo, a wrong Angular decorator), and confirmed the corrected flow works end-to-end. Next up: the actual <code>LoginComponent</code> and <code>/login</code> route, since the app currently has no real login UI wired to it.
+Module 11, Session 2 — JWT Bearer Authentication and Refresh Token Rotation. Having already wired up an HttpOnly cookie + antiforgery (XSRF) handshake in Module 10, I'm now layering in token-based auth on the ASP.NET Core API: issuing short-lived JWT access tokens, implementing refresh token rotation (with reuse detection), and adapting the Angular client to handle the token lifecycle alongside the existing cookie-based flow.
 </details>
 
 <details>
