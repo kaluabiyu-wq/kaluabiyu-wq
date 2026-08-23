@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Refresh+Token+Rotation+%E2%80%94+M11;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Policy+Authorization+%2B+Security+Hardening+%E2%80%94+M11;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -25,7 +25,7 @@ Fullstack developer building production-style applications end-to-end on the **.
 - 🏗️ Building **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + Angular 22 zoneless client (signals, NgRx SignalStore, `@defer`-loaded analytics dashboard)
 - 💊 Designing **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa
 - 📍 Based in Addis Ababa, Ethiopia
-- ⚡ Right now: on **Module 11, Session 2 — JWT Bearer Authentication & Refresh Token Rotation**, extending TMS's auth story beyond the cookie + antiforgery handshake built in Module 10 with token-based auth (short-lived access tokens, rotating refresh tokens) for scenarios the HttpOnly-cookie flow doesn't cover
+- ⚡ Right now: on **Module 11, Session 3 — Policy Authorization & Security Hardening**, moving TMS's authorization model beyond role checks with a resource-based `CourseInstructorHandler` (instructors can only edit courses they own), Angular `roleGuard`/`jwtInterceptor` for client-side route protection, and API hardening via named rate-limit policies and a security-headers middleware
 
 ---
 
@@ -42,7 +42,7 @@ Fullstack training/course enrollment platform for a fictional training instituti
 | **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — layered Clean Architecture (Domain/Application/Infrastructure/Api), CQRS with MediatR, FluentValidation, HATEOAS, versioned REST endpoints, RFC 9457 ProblemDetails |
 | **Real-time** | SignalR typed hubs for enrollment/transcript notifications, async request-reply pattern for long-running work with idempotency keys |
 | **Client** | Angular 22, standalone components, zoneless change detection, signals, NgRx SignalStore, reactive forms, `@defer` blocks with Angular Material — including an instructor analytics dashboard with a live Approved/Pending/Rejected chart |
-| **Auth** | M10: HttpOnly auth cookie + antiforgery (XSRF) handshake between API and client, verified end-to-end. M11 (current): JWT Bearer authentication with refresh token rotation, layered in alongside the cookie flow |
+| **Auth & Security** | M10: HttpOnly auth cookie + antiforgery (XSRF) handshake. M11: JWT Bearer authentication with refresh token rotation (Session 2), followed by resource-based policy authorization, Angular route guards, API rate limiting, and security-response-headers hardening (Session 3, current) |
 
 **Repos:**
 [![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
@@ -134,7 +134,7 @@ A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which 
 <details>
 <summary><b>What am I currently learning?</b></summary>
 <br/>
-Module 11, Session 2 — JWT Bearer Authentication and Refresh Token Rotation. Having already wired up an HttpOnly cookie + antiforgery (XSRF) handshake in Module 10, I'm now layering in token-based auth on the ASP.NET Core API: issuing short-lived JWT access tokens, implementing refresh token rotation (with reuse detection), and adapting the Angular client to handle the token lifecycle alongside the existing cookie-based flow.
+Module 11, Session 3 — Policy Authorization and Security Hardening. Having wired up JWT Bearer authentication with refresh token rotation in Session 2, I'm now moving TMS's authorization model beyond simple role checks: a resource-based <code>AuthorizationHandler</code> that lets instructors edit only the courses they actually own, Angular route guards and an HTTP interceptor that attach the bearer token and redirect unauthorized users client-side, and API hardening — named rate-limit policies on sensitive endpoints and a security-response-headers middleware (X-Frame-Options, X-Content-Type-Options, Content-Security-Policy).
 </details>
 
 <details>
