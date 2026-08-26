@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Policy+Authorization+%2B+Security+Hardening+%E2%80%94+M11;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -23,9 +23,9 @@ Fullstack developer building production-style applications end-to-end on the **.
 
 - 🎓 Working through a structured fullstack curriculum: **C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 with PostgreSQL, Angular 22**
 - 🏗️ Building **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + Angular 22 zoneless client (signals, NgRx SignalStore, `@defer`-loaded analytics dashboard)
-- 💊 Designing **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa
+- 💊 Building **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa, run as a parallel independent project alongside the curriculum, mirroring the same module structure (C# domain modeling, TypeScript, Git, ASP.NET Core, EF Core/PostgreSQL, REST API, hardening, Angular client). Currently mid-migration: splitting PMFApi out of its original single-project layout into a layered Clean Architecture (`PmfApi.Domain`/`PmfApi.Application`/`PmfApi.Infrastructure`/`PmfApi.Api`), matching the structure TMS moved to earlier in the curriculum
 - 📍 Based in Addis Ababa, Ethiopia
-- ⚡ Right now: on **Module 11, Session 3 — Policy Authorization & Security Hardening**, moving TMS's authorization model beyond role checks with a resource-based `CourseInstructorHandler` (instructors can only edit courses they own), Angular `roleGuard`/`jwtInterceptor` for client-side route protection, and API hardening via named rate-limit policies and a security-headers middleware
+- ⚡ Right now: wrapped **Module 11, Session 3 — Policy Authorization & Security Hardening** — a resource-based `CourseInstructorHandler` so instructors can only edit courses they own, Angular `roleGuard`/`jwtInterceptor` for client-side route protection, and API hardening via named rate-limit policies and a security-headers middleware — then did a full **repo correction pass** across both live branches, tracking down and fixing real bugs that had shipped: an unreachable duplicate `CourseController`, security headers that only applied to authenticated responses, a misspelled CSP header, a broken JWT interceptor, a dead-end `/unautherized` redirect, and a frontend/backend field-name mismatch (`username` vs `Email`) that made login silently unable to succeed
 
 ---
 
@@ -42,7 +42,7 @@ Fullstack training/course enrollment platform for a fictional training instituti
 | **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — layered Clean Architecture (Domain/Application/Infrastructure/Api), CQRS with MediatR, FluentValidation, HATEOAS, versioned REST endpoints, RFC 9457 ProblemDetails |
 | **Real-time** | SignalR typed hubs for enrollment/transcript notifications, async request-reply pattern for long-running work with idempotency keys |
 | **Client** | Angular 22, standalone components, zoneless change detection, signals, NgRx SignalStore, reactive forms, `@defer` blocks with Angular Material — including an instructor analytics dashboard with a live Approved/Pending/Rejected chart |
-| **Auth & Security** | M10: HttpOnly auth cookie + antiforgery (XSRF) handshake. M11: JWT Bearer authentication with refresh token rotation (Session 2), followed by resource-based policy authorization, Angular route guards, API rate limiting, and security-response-headers hardening (Session 3, current) |
+| **Auth & Security** | M10: HttpOnly auth cookie + antiforgery (XSRF) handshake. M11: JWT Bearer authentication with refresh token rotation, resource-based policy authorization (`CourseInstructorHandler`), Angular route guards + JWT interceptor, named rate-limit policies, and a security-response-headers middleware — followed by a correction pass that fixed real bugs across both the API and client branches |
 
 **Repos:**
 [![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
@@ -57,15 +57,15 @@ Fullstack training/course enrollment platform for a fictional training instituti
 <summary><b>💊 PMAFS — Pharmacy Medicine Availability Finding System</b> — click to expand</summary>
 <br/>
 
-A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which medicines, at what price, and how reliable that stock information is. Built as two pieces: **PMFCore**, a small standalone project for prototyping the domain rules in isolation, and **PMFApi**, the full ASP.NET Core Web API that implements them for real.
+A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which medicines, at what price, and how reliable that stock information is. Built as two pieces: **PMFCore**, a small standalone project for prototyping the domain rules in isolation, and **PMFApi**, the full ASP.NET Core Web API that implements them for real, with a TypeScript/Node client on top. PMFApi is currently on its `Pmf-Split-in-CleanArchitecture` branch, mid-migration from a single-project layout into four layered projects (`PmfApi.Domain`, `PmfApi.Application`, `PmfApi.Infrastructure`, `PmfApi.Api`).
 
-- **Domain rules, prototyped in PMFCore** — a `PharmacyRank` scoring algorithm that blends stock freshness and recency-of-update into a 1–4 reliability tier, plus validation rules baked into the models themselves (no medicine price ≤ 10, no blank names, reliability scores clamped to 1–100)
-- **Full CRUD API, built in PMFApi** — versioned controllers for Pharmacies, Medicines, Inventory, Locations, Users, Roles, Pharmacy Schedules, and User Feedback, backed by EF Core migrations against PostgreSQL (Npgsql)
-- **Inventory history & audit trail** — every price change on an inventory item is logged (old price, who changed it, when) via a dedicated `InventoryHistory` entity
-- **Location-aware search** — pharmacies and users are tied to a `Location` record carrying subcity, woreda, and lat/long coordinates
-- **Custom header-based auth scheme** — a `PharmacyAuthHandler` authentication handler backing four roles (Patient, Pharmacy Staff, Pharmacy Admin, System Admin)
-- **A reporting layer on top of it all** — a dedicated `ReportController` with EF Core aggregate queries: verified-pharmacy counts, medicine distribution per pharmacy, average price per medicine, pharmacies with no stock, and a top-5 pharmacies ranking by inventory count, reliability score, and lowest price
-- Global exception handling via `ProblemDetails`, request logging middleware, and Scalar/OpenAPI docs
+| Layer | Highlights |
+|---|---|
+| **Domain (PMFCore)** | Standalone prototyping project for the core rules before they hit the full API — a `PharmacyRank` scoring algorithm blending stock freshness and recency-of-update into a 1–4 reliability tier, validation baked into the models themselves (no medicine price ≤ 10, no blank names, reliability scores clamped to 1–100), plus LINQ grouping and async lookups (`Task.WhenAll`, dictionary-keyed lookups) for batched data loading |
+| **API (PMFApi)** | ASP.NET Core, EF Core migrations against PostgreSQL (Npgsql) — versioned CRUD controllers for Pharmacies, Medicines, Inventory, Locations, Users, Roles, Pharmacy Schedules, and User Feedback; global exception handling via `ProblemDetails`, request logging middleware, Scalar/OpenAPI docs; currently being split into a 4-project Clean Architecture layout (`PmfApi.Domain`/`Application`/`Infrastructure`/`Api`) on the `Pmf-Split-in-CleanArchitecture` branch |
+| **Data & Auditing** | Every price change on an inventory item is logged (old price, who changed it, when) via a dedicated `InventoryHistory` entity; pharmacies and users tied to a `Location` record carrying subcity, woreda, and lat/long coordinates for location-aware search |
+| **Auth** | Custom header-based `PharmacyAuthHandler` authentication handler backing four roles (Patient, Pharmacy Staff, Pharmacy Admin, System Admin) |
+| **Client** | TypeScript/Node client (Pmf-Client) built on TypeScript 7.0 (the Go-based compiler rewrite), using discriminated unions with the Temporal API and Angular reactive forms with `FormArray` |
 
 **Repos:**
 [![PMFApi](https://img.shields.io/badge/PMFApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFApi)
@@ -134,7 +134,7 @@ A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which 
 <details>
 <summary><b>What am I currently learning?</b></summary>
 <br/>
-Module 11, Session 3 — Policy Authorization and Security Hardening. Having wired up JWT Bearer authentication with refresh token rotation in Session 2, I'm now moving TMS's authorization model beyond simple role checks: a resource-based <code>AuthorizationHandler</code> that lets instructors edit only the courses they actually own, Angular route guards and an HTTP interceptor that attach the bearer token and redirect unauthorized users client-side, and API hardening — named rate-limit policies on sensitive endpoints and a security-response-headers middleware (X-Frame-Options, X-Content-Type-Options, Content-Security-Policy).
+Just wrapped Module 11, Session 3 — Policy Authorization and Security Hardening. Having wired up JWT Bearer authentication with refresh token rotation in Session 2, I moved TMS's authorization model beyond simple role checks: a resource-based <code>AuthorizationHandler</code> that lets instructors edit only the courses they actually own, Angular route guards and an HTTP interceptor that attach the bearer token and redirect unauthorized users client-side, and API hardening — named rate-limit policies on sensitive endpoints and a security-response-headers middleware (X-Frame-Options, X-Content-Type-Options, Content-Security-Policy). I then went back through both live branches for a correction pass and fixed real issues that had shipped: an unreachable duplicate controller route, security headers that only fired on authenticated responses, a misspelled CSP header, a JWT interceptor using the wrong DI syntax and header name, a guard redirecting to a route that didn't exist, and a login field-name mismatch between the frontend and backend that silently broke authentication end-to-end.
 </details>
 
 <details>
