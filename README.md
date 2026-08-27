@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%" alt="Kalu Abiyu — Fullstack .NET + Angular Developer"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG — Building TMS with ASP.NET Core 10 and Angular 22" />
 </a>
 
 <br/>
@@ -25,7 +25,7 @@ Fullstack developer building production-style applications end-to-end on the **.
 - 🏗️ Building **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + Angular 22 zoneless client (signals, NgRx SignalStore, `@defer`-loaded analytics dashboard)
 - 💊 Building **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa, run as a parallel independent project alongside the curriculum, mirroring the same module structure (C# domain modeling, TypeScript, Git, ASP.NET Core, EF Core/PostgreSQL, REST API, hardening, Angular client). Currently mid-migration: splitting PMFApi out of its original single-project layout into a layered Clean Architecture (`PmfApi.Domain`/`PmfApi.Application`/`PmfApi.Infrastructure`/`PmfApi.Api`), matching the structure TMS moved to earlier in the curriculum
 - 📍 Based in Addis Ababa, Ethiopia
-- ⚡ Right now:Wrapped **Module 11, Session 3 — Policy Authorization & Security Hardening**: a resource-based `CourseInstructorHandler` restricting instructors to courses they own, Angular `roleGuard`/`jwtInterceptor` for route protection, and API hardening via rate-limit policies and security headers. Followed by a full repo correction pass fixing real shipped bugs — an unreachable duplicate `CourseController`, headers only firing when authenticated, a misspelled CSP header, a broken interceptor, a dead-end redirect, and a login field mismatch (`username` vs `Email`).
+- ⚡ Right now: Wrapped **Module 11, Session 3 — Policy Authorization & Security Hardening**: a resource-based `CourseInstructorHandler` restricting instructors to courses they own, Angular `roleGuard`/`jwtInterceptor` for route protection, and API hardening via rate-limit policies and security headers. Followed by a full repo correction pass fixing real shipped bugs — an unreachable duplicate `CourseController`, headers only firing when authenticated, a misspelled CSP header, a broken interceptor, a dead-end redirect, and a login field mismatch (`username` vs `Email`).
 ---
 
 ## 🚀 Featured Projects
@@ -78,7 +78,7 @@ A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which 
 ## 🛠️ Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,postgres,angular,ts,git,html,css&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,postgres,angular,ts,git,html,css&theme=dark" alt="Tech stack icons: C#, .NET, PostgreSQL, Angular, TypeScript, Git, HTML, CSS"/>
 </p>
 
 <details>
@@ -115,13 +115,13 @@ A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which 
 <div align="center">
 
 <a href="https://github.com/kaluabiyu-wq/TmsApi">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=TmsApi&theme=tokyonight&hide_border=true" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=TmsApi&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="TmsApi repo card"/>
 </a>
 <a href="https://github.com/kaluabiyu-wq/tms-clients2">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=tms-clients2&theme=tokyonight&hide_border=true" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=tms-clients2&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="tms-clients2 repo card"/>
 </a>
 <a href="https://github.com/kaluabiyu-wq/PMFApi">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=PMFApi&theme=tokyonight&hide_border=true" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=PMFApi&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="PMFApi repo card"/>
 </a>
 
 </div>
@@ -160,12 +160,7 @@ Starring the repos above is the biggest help — it's the single strongest signa
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=kaluabiyu-wq&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kaluabiyu-wq&layout=compact&theme=tokyonight&hide_border=true" width="30%"/>
-
-<img src= "https://streak-stats.demolab.com/?user=kaluabiyu-wq&theme=tokyonight&hide_border=true" width="49%"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=kaluabiyu-wq&theme=tokyo-night&hide_border=true" width="100%"/>
+<img src="https://streak-stats.demolab.com/?user=kaluabiyu-wq&theme=tokyonight&hide_border=true&disable_animations=true" width="49%" alt="Kalu's GitHub streak stats"/>
 
 </div>
 
