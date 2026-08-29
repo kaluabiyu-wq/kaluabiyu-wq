@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%" alt="Kalu Abiyu — Fullstack .NET + Angular Developer"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG — Building TMS with ASP.NET Core 10 and Angular 22" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Vitest+%2B+Playwright+E2E+%E2%80%94+M12;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG — Building TMS with ASP.NET Core 10 and Angular 22" />
 </a>
 
 <br/>
@@ -25,7 +25,7 @@ Fullstack developer building production-style applications end-to-end on the **.
 - 🏗️ Building **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + Angular 22 zoneless client (signals, NgRx SignalStore, `@defer`-loaded analytics dashboard)
 - 💊 Building **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa, run as a parallel independent project alongside the curriculum, mirroring the same module structure (C# domain modeling, TypeScript, Git, ASP.NET Core, EF Core/PostgreSQL, REST API, hardening, Angular client). Currently mid-migration: splitting PMFApi out of its original single-project layout into a layered Clean Architecture (`PmfApi.Domain`/`PmfApi.Application`/`PmfApi.Infrastructure`/`PmfApi.Api`), matching the structure TMS moved to earlier in the curriculum
 - 📍 Based in Addis Ababa, Ethiopia
-- ⚡ Right now: Wrapped **Module 11, Session 3 — Policy Authorization & Security Hardening**: a resource-based `CourseInstructorHandler` restricting instructors to courses they own, Angular `roleGuard`/`jwtInterceptor` for route protection, and API hardening via rate-limit policies and security headers. Followed by a full repo correction pass fixing real shipped bugs — an unreachable duplicate `CourseController`, headers only firing when authenticated, a misspelled CSP header, a broken interceptor, a dead-end redirect, and a login field mismatch (`username` vs `Email`).
+- ⚡ Right now: **Module 12, Session 2 — Frontend Vitest, Playwright E2E & Business Rule Sprint.** Locking down the TMS frontend surface after M11's auth hardening: Vitest component specs for signal-input Angular components (`fixture.componentRef.setInput`, `provideRouter([])`), NgRx SignalStore integration specs, HTTP-boundary specs against `HttpTestingController`, and a Playwright E2E suite — shared-`storageState` auth reuse across a `setup` project dependency, a happy-path admin-approves-enrollment flow, and an unhappy-path spec forcing a 500 via `page.route` — plus a new `MaxEnrollmentsPerStudent` business rule driven out with a guiding test.
 ---
 
 ## 🚀 Featured Projects
@@ -39,9 +39,10 @@ Fullstack training/course enrollment platform for a fictional training instituti
 | Layer | Highlights |
 |---|---|
 | **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — layered Clean Architecture (Domain/Application/Infrastructure/Api), CQRS with MediatR, FluentValidation, HATEOAS, versioned REST endpoints, RFC 9457 ProblemDetails |
-| **Real-time** | SignalR typed hubs for enrollment/transcript notifications, async request-reply pattern for long-running work with idempotency keys |
-| **Client** | Angular 22, standalone components, zoneless change detection, signals, NgRx SignalStore, reactive forms, `@defer` blocks with Angular Material — including an instructor analytics dashboard with a live Approved/Pending/Rejected chart |
+| **Real-time** | SignalR typed hubs (`ITmsHubClient`) for enrollment/transcript/grade notifications, async request-reply pattern for long-running work with idempotency keys |
+| **Client** | Angular 22, standalone components, zoneless change detection, signals, NgRx SignalStore, reactive forms, `@defer` blocks with Angular Material — including an instructor analytics dashboard with a live Approved/Pending/Rejected chart, defensive RxJS (`exhaustMap` rage-click guards, `takeUntilDestroyed`), and a `LiveSyncService` bridging SignalR push events into the store |
 | **Auth & Security** | M10: HttpOnly auth cookie + antiforgery (XSRF) handshake. M11: JWT Bearer authentication with refresh token rotation, resource-based policy authorization (`CourseInstructorHandler`), Angular route guards + JWT interceptor, named rate-limit policies, and a security-response-headers middleware — followed by a correction pass that fixed real bugs across both the API and client branches |
+| **Testing** | M12: Vitest component/store specs (signal inputs, `HttpTestingController` boundary tests) and a Playwright E2E suite covering happy-path and failure-path (forced 5xx) journeys, with shared `storageState` auth reuse across a dedicated `setup` project |
 
 **Repos:**
 [![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
@@ -100,6 +101,10 @@ A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which 
 ![NgRx](https://img.shields.io/badge/-NgRx%20SignalStore-BA2BD2?style=flat)
 ![RxJS](https://img.shields.io/badge/-RxJS-B7178C?style=flat&logo=reactivex&logoColor=white)
 
+**Testing**
+![Vitest](https://img.shields.io/badge/-Vitest-6E9F18?style=flat&logo=vitest&logoColor=white)
+![Playwright](https://img.shields.io/badge/-Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
+
 **Tools & Practices**
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
 ![Clean Architecture](https://img.shields.io/badge/-Clean%20Architecture-2E8B57?style=flat)
@@ -133,7 +138,7 @@ A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which 
 <details>
 <summary><b>What am I currently learning?</b></summary>
 <br/>
-Just wrapped Module 11, Session 3 — Policy Authorization and Security Hardening. Building on Session 2's JWT Bearer auth, I moved TMS's authorization beyond role checks: a resource-based `AuthorizationHandler` restricting instructors to courses they own, Angular route guards and an interceptor for bearer tokens, plus API hardening via named rate-limit policies and security headers. A follow-up correction pass then fixed real shipped bugs: an unreachable controller route, headers only firing when authenticated, a misspelled CSP header, a broken interceptor, a dead-end guard redirect, and a login field mismatch silently breaking auth.
+Just wrapped Module 12, Session 2 — Frontend Vitest, Playwright E2E & Business Rule Sprint. Building on M11's JWT/policy auth work, I locked down the Angular frontend surface: Vitest specs for signal-input components and NgRx SignalStores, HTTP-boundary specs against HttpTestingController, and a Playwright E2E suite with shared storageState auth reuse across a dedicated setup project — covering both a happy-path admin-approve-enrollment flow and an unhappy-path spec that forces a 500 to verify the error banner. Also drove out a new MaxEnrollmentsPerStudent business rule with a guiding test.
 </details>
 
 <details>
@@ -145,7 +150,7 @@ Yes — I'm particularly interested in fullstack roles working with .NET and Ang
 <details>
 <summary><b>What's the tech stack behind TMS, in one line?</b></summary>
 <br/>
-ASP.NET Core 10 API (Clean Architecture + CQRS/MediatR + SignalR) talking to an Angular 22 zoneless client (signals + NgRx SignalStore).
+ASP.NET Core 10 API (Clean Architecture + CQRS/MediatR + SignalR) talking to an Angular 22 zoneless client (signals + NgRx SignalStore), backed by a Vitest + Playwright test suite.
 </details>
 
 <details>
