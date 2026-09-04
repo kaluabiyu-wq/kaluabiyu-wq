@@ -19,13 +19,15 @@
 
 ## 👋 About Me
 
-Fullstack developer building production-style applications end-to-end on the **.NET + Angular** stack — from API and database design through to the client — with a strong interest in system architecture.
+Fullstack developer building production-style applications end-to-end on the .NET + Angular stack — from API and database design through to the client — with a strong interest in system architecture.
 
-- 🎓 Working through a structured fullstack curriculum: **C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 with PostgreSQL, Angular 22**
-- 🏗️ Building **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + Angular 22 zoneless client (signals, NgRx SignalStore, `@defer`-loaded analytics dashboard)
-- 💊 Building **PMAFS (Pharmacy Medicine Availability Finding System)** — location-aware pharmacy stock platform for Addis Ababa, run as a parallel independent project alongside the curriculum, mirroring the same module structure (C# domain modeling, TypeScript, Git, ASP.NET Core, EF Core/PostgreSQL, REST API, hardening, Angular client). Currently mid-migration: splitting PMFApi out of its original single-project layout into a layered Clean Architecture (`PmfApi.Domain`/`PmfApi.Application`/`PmfApi.Infrastructure`/`PmfApi.Api`), matching the structure TMS moved to earlier in the curriculum
-- 📍 Based in Addis Ababa, Ethiopia
-- ⚡ Right now: **Module 12, Session 2 — Frontend Vitest, Playwright E2E & Business Rule Sprint.** Locking down the TMS frontend surface after M11's auth hardening: Vitest component specs for signal-input Angular components (`fixture.componentRef.setInput`, `provideRouter([])`), NgRx SignalStore integration specs, HTTP-boundary specs against `HttpTestingController`, and a Playwright E2E suite — shared-`storageState` auth reuse across a `setup` project dependency, a happy-path admin-approves-enrollment flow, and an unhappy-path spec forcing a 500 via `page.route` — plus a new `MaxEnrollmentsPerStudent` business rule driven out with a guiding test.
+- 🎓 Going through a fullstack curriculum: C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 + PostgreSQL, Angular 22
+- 🏗️ **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + a zoneless Angular 22 client (signals, NgRx SignalStore, a `@defer`-loaded analytics dashboard)
+- 💊 **PMAFS (Pharmacy Medicine Availability Finding System)** — a location-aware pharmacy stock finder for Addis Ababa, built alongside the curriculum on the same module structure. Still splitting PMFApi out of its old single-project layout into Clean Architecture (Domain/Application/Infrastructure/Api), same move TMS made earlier — once that's done, next up is wiring Pmf-Clients-2 (the Angular frontend) to it
+- 📍 Addis Ababa, Ethiopia
+- ⚡ **TMS now:** Module 12, Session 2 — frontend testing. Vitest for components/stores, HTTP boundary specs, Playwright E2E with shared login state, plus a new `MaxEnrollmentsPerStudent` rule
+- ⚡ **PMAFS now:** splitting PMFApi into Clean Architecture. Pmf-Clients-2 is queued up next once that's done
+
 ---
 
 ## 🚀 Featured Projects
@@ -34,15 +36,15 @@ Fullstack developer building production-style applications end-to-end on the **.
 <summary><b>🎓 Training Management System (TMS)</b> — click to collapse</summary>
 <br/>
 
-Fullstack training/course enrollment platform for a fictional training institution (CTBE).
+Course enrollment platform for a fictional training institution (CTBE).
 
 | Layer | Highlights |
 |---|---|
-| **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — layered Clean Architecture (Domain/Application/Infrastructure/Api), CQRS with MediatR, FluentValidation, HATEOAS, versioned REST endpoints, RFC 9457 ProblemDetails |
-| **Real-time** | SignalR typed hubs (`ITmsHubClient`) for enrollment/transcript/grade notifications, async request-reply pattern for long-running work with idempotency keys |
-| **Client** | Angular 22, standalone components, zoneless change detection, signals, NgRx SignalStore, reactive forms, `@defer` blocks with Angular Material — including an instructor analytics dashboard with a live Approved/Pending/Rejected chart, defensive RxJS (`exhaustMap` rage-click guards, `takeUntilDestroyed`), and a `LiveSyncService` bridging SignalR push events into the store |
-| **Auth & Security** | M10: HttpOnly auth cookie + antiforgery (XSRF) handshake. M11: JWT Bearer authentication with refresh token rotation, resource-based policy authorization (`CourseInstructorHandler`), Angular route guards + JWT interceptor, named rate-limit policies, and a security-response-headers middleware — followed by a correction pass that fixed real bugs across both the API and client branches |
-| **Testing** | M12: Vitest component/store specs (signal inputs, `HttpTestingController` boundary tests) and a Playwright E2E suite covering happy-path and failure-path (forced 5xx) journeys, with shared `storageState` auth reuse across a dedicated `setup` project |
+| **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — Clean Architecture, CQRS/MediatR, versioned endpoints, ProblemDetails |
+| **Real-time** | SignalR hubs for enrollment/transcript/grade updates, async request-reply for longer jobs |
+| **Client** | Angular 22, zoneless, signals, NgRx SignalStore — instructor dashboard, live SignalR sync |
+| **Auth & Security** | JWT with refresh rotation, resource-based policies, route guards, rate limiting, security headers |
+| **Testing** *(in progress)* | Vitest for components/stores, Playwright E2E, shared login state across a setup project |
 
 **Repos:**
 [![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
@@ -50,22 +52,21 @@ Fullstack training/course enrollment platform for a fictional training instituti
 [![TmsCore](https://img.shields.io/badge/TmsCore-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsCore)
 [![tms-client](https://img.shields.io/badge/tms--client-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/tms-client)
 
-
 </details>
 
 <details>
 <summary><b>💊 PMAFS — Pharmacy Medicine Availability Finding System</b> — click to expand</summary>
 <br/>
 
-A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which medicines, at what price, and how reliable that stock information is. Built as two pieces: **PMFCore**, a small standalone project for prototyping the domain rules in isolation, and **PMFApi**, the full ASP.NET Core Web API that implements them for real, with a TypeScript/Node client on top. PMFApi is currently on its `Pmf-Split-in-CleanArchitecture` branch, mid-migration from a single-project layout into four layered projects (`PmfApi.Domain`, `PmfApi.Application`, `PmfApi.Infrastructure`, `PmfApi.Api`).
+A pharmacy network API for Addis Ababa — which pharmacies carry which medicines, at what price, and how trustworthy that stock info is. Two pieces: **PMFCore**, where I prototype the domain rules on their own, and **PMFApi**, the real ASP.NET Core Web API with a TypeScript client on top. PMFApi is still mid-split on the `Pmf-Split-in-CleanArchitecture` branch, moving into four layered projects (Domain/Application/Infrastructure/Api). Once that lands, the next stop is Pmf-Clients-2 — bringing the Angular frontend up to speed with the new API shape.
 
 | Layer | Highlights |
 |---|---|
-| **Domain (PMFCore)** | Standalone prototyping project for the core rules before they hit the full API — a `PharmacyRank` scoring algorithm blending stock freshness and recency-of-update into a 1–4 reliability tier, validation baked into the models themselves (no medicine price ≤ 10, no blank names, reliability scores clamped to 1–100), plus LINQ grouping and async lookups (`Task.WhenAll`, dictionary-keyed lookups) for batched data loading |
-| **API (PMFApi)** | ASP.NET Core, EF Core migrations against PostgreSQL (Npgsql) — versioned CRUD controllers for Pharmacies, Medicines, Inventory, Locations, Users, Roles, Pharmacy Schedules, and User Feedback; global exception handling via `ProblemDetails`, request logging middleware, Scalar/OpenAPI docs; currently being split into a 4-project Clean Architecture layout (`PmfApi.Domain`/`Application`/`Infrastructure`/`Api`) on the `Pmf-Split-in-CleanArchitecture` branch |
-| **Data & Auditing** | Every price change on an inventory item is logged (old price, who changed it, when) via a dedicated `InventoryHistory` entity; pharmacies and users tied to a `Location` record carrying subcity, woreda, and lat/long coordinates for location-aware search |
-| **Auth** | Custom header-based `PharmacyAuthHandler` authentication handler backing four roles (Patient, Pharmacy Staff, Pharmacy Admin, System Admin) |
-| **Client** | TypeScript/Node client (Pmf-Client) built on TypeScript 7.0 (the Go-based compiler rewrite), using discriminated unions with the Temporal API and Angular reactive forms with `FormArray` |
+| **Domain (PMFCore)** | `PharmacyRank` score (stock freshness + recency → 1–4 tier), validation baked into the models, async batched lookups |
+| **API (PMFApi)** *(in progress)* | EF Core + PostgreSQL, versioned CRUD across Pharmacies, Medicines, Inventory, Locations, Users. Mid-split into 4-project Clean Architecture |
+| **Data & Auditing** | Every inventory price change logged via `InventoryHistory`. `Location` records carry subcity, woreda, lat/long for proximity search |
+| **Auth** | Custom header-based `PharmacyAuthHandler`, four roles: Patient, Pharmacy Staff, Pharmacy Admin, System Admin |
+| **Client (Pmf-Client)** *(next up)* | TypeScript 7.0, discriminated unions with the Temporal API, Angular reactive forms — Pmf-Clients-2 rebuild queued after the API split |
 
 **Repos:**
 [![PMFApi](https://img.shields.io/badge/PMFApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFApi)
@@ -138,25 +139,25 @@ A pharmacy-network API for Addis Ababa that tracks which pharmacies carry which 
 <details>
 <summary><b>What am I currently learning?</b></summary>
 <br/>
-Just wrapped Module 12, Session 2 — Frontend Vitest, Playwright E2E & Business Rule Sprint. Building on M11's JWT/policy auth work, I locked down the Angular frontend surface: Vitest specs for signal-input components and NgRx SignalStores, HTTP-boundary specs against HttpTestingController, and a Playwright E2E suite with shared storageState auth reuse across a dedicated setup project — covering both a happy-path admin-approve-enrollment flow and an unhappy-path spec that forces a 500 to verify the error banner. Also drove out a new MaxEnrollmentsPerStudent business rule with a guiding test.
+Just wrapped Module 12, Session 2 — frontend testing. Building on M11's JWT/policy work: Vitest specs for signal-input components and NgRx SignalStores, HTTP boundary specs, and a Playwright E2E suite with shared login state — a happy-path admin-approve flow and a forced-500 spec to check the error banner. Also added a MaxEnrollmentsPerStudent rule, test-first.
 </details>
 
 <details>
 <summary><b>Am I open to collaborating or job opportunities?</b></summary>
 <br/>
-Yes — I'm particularly interested in fullstack roles working with .NET and Angular. Feel free to reach out via email or LinkedIn above.
+Yes — especially fullstack roles in .NET and Angular. Email or LinkedIn above works.
 </details>
 
 <details>
 <summary><b>What's the tech stack behind TMS, in one line?</b></summary>
 <br/>
-ASP.NET Core 10 API (Clean Architecture + CQRS/MediatR + SignalR) talking to an Angular 22 zoneless client (signals + NgRx SignalStore), backed by a Vitest + Playwright test suite.
+ASP.NET Core 10 (Clean Architecture, CQRS/MediatR, SignalR) talking to a zoneless Angular 22 client (signals, NgRx SignalStore), backed by Vitest + Playwright.
 </details>
 
 <details>
 <summary><b>How can you support this profile?</b></summary>
 <br/>
-Starring the repos above is the biggest help — it's the single strongest signal for both GitHub's discovery algorithm and anyone evaluating the work. A follow keeps you posted as new modules ship.
+Starring the repos above helps the most — it's the strongest signal for both GitHub's discovery and anyone evaluating the work. A follow keeps you posted as new modules ship.
 </details>
 
 ---
@@ -187,7 +188,7 @@ Starring the repos above is the biggest help — it's the single strongest signa
 
 **📧 Email**
 <br/>
-for job offers, collaboration proposals, or anything that needs a real reply.
+Job offers, collaboration, anything that needs a real reply.
 <br/>
 <a href="mailto:kaluabiyu@gmail.com">kaluabiyu@gmail.com</a>
 </td>
@@ -195,7 +196,7 @@ for job offers, collaboration proposals, or anything that needs a real reply.
 
 **💼 LinkedIn**
 <br/>
- for professional networking and recruiter outreach.
+Professional networking and recruiter outreach.
 <br/>
 <a href="https://linkedin.com/in/kalu-abiyu">/in/kalu-abiyu</a>
 </td>
@@ -203,7 +204,7 @@ for job offers, collaboration proposals, or anything that needs a real reply.
 
 **📸 Instagram**
 <br/>
- for a more casual hello or to see what I'm up to outside of code.
+A casual hello, or what I'm up to outside of code.
 <br/>
 <a href="https://instagram.com/Kalu_abi77">@Kalu_abi77</a>
 </td>
