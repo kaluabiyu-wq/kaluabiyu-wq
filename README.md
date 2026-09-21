@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%" alt="Kalu Abiyu — Fullstack .NET + Angular Developer"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Vitest+%2B+Playwright+E2E+%E2%80%94+M12;Designing+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG — Building TMS with ASP.NET Core 10 and Angular 22" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Vitest+%2B+Playwright+E2E+%E2%80%94+M12;Building+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG — Building TMS with ASP.NET Core 10 and Angular 22" />
 </a>
 
 <br/>
@@ -23,10 +23,20 @@ Fullstack developer building production-style applications end-to-end on the .NE
 
 - 🎓 Going through a fullstack curriculum: C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 + PostgreSQL, Angular 22
 - 🏗️ **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + a zoneless Angular 22 client (signals, NgRx SignalStore, a `@defer`-loaded analytics dashboard)
-- 💊 **PMAFS (Pharmacy Medicine Availability Finding System)** — a location-aware pharmacy stock finder for Addis Ababa, built alongside the curriculum on the same module structure. Still splitting PMFApi out of its old single-project layout into Clean Architecture (Domain/Application/Infrastructure/Api), same move TMS made earlier — once that's done, next up is wiring Pmf-Clients-2 (the Angular frontend) to it
+- 💊 **PMAFS (Pharmacy Medicine Availability Finding System)** — a location-aware pharmacy stock finder for Addis Ababa, built alongside the curriculum on the same module structure. Splitting PMFApi out of its old single-project layout into Clean Architecture (Domain/Application/Infrastructure/Api), same move TMS made earlier — with Pmf-Clients-2 (the Angular frontend) now under way alongside it
 - 📍 Addis Ababa, Ethiopia
-- ⚡ **TMS now:** Module 12, Session 2 — frontend testing. Vitest for components/stores, HTTP boundary specs, Playwright E2E with shared login state, plus a new `MaxEnrollmentsPerStudent` rule
-- ⚡ **PMAFS now:** splitting PMFApi into Clean Architecture. Pmf-Clients-2 is queued up next once that's done
+
+---
+
+## 📍 Current Status
+
+*Last updated: September 2026*
+
+| Project | Where it stands |
+|---|---|
+| 🎓 **TMS** | **Module 12, Session 2 complete — frontend testing.** Vitest specs for signal-input components and NgRx SignalStores, HTTP-boundary specs, Playwright E2E with shared login state (happy-path admin-approve flow + forced-500 error-banner spec), and a new `MaxEnrollmentsPerStudent` rule written test-first. Builds on M11's JWT + resource-based policy work |
+| 💊 **PMAFS** | **Pmf-Clients-2 (the Angular frontend) is now under way** on the `Pmf-Client-12` branch — Angular 22.1 with Angular Material/CDK, RxJS and Vitest. In parallel, **PMFApi is being layered into Clean Architecture** on the `Pmf-Split-in-CleanArchitecture` branch — `PmfApi.Domain`, `PmfApi.Application`, `PmfApi.Infrastructure` and `PmfApi.Api` are in place |
+| 🔎 **Open to** | Fullstack roles in .NET and Angular — see [Contact](#-contact-me) |
 
 ---
 
@@ -44,7 +54,7 @@ Course enrollment platform for a fictional training institution (CTBE).
 | **Real-time** | SignalR hubs for enrollment/transcript/grade updates, async request-reply for longer jobs |
 | **Client** | Angular 22, zoneless, signals, NgRx SignalStore — instructor dashboard, live SignalR sync |
 | **Auth & Security** | JWT with refresh rotation, resource-based policies, route guards, rate limiting, security headers |
-| **Testing** *(in progress)* | Vitest for components/stores, Playwright E2E, shared login state across a setup project |
+| **Testing** *(M12)* | Vitest for components/stores, Playwright E2E, shared login state across a setup project |
 
 **Repos:**
 [![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
@@ -58,7 +68,7 @@ Course enrollment platform for a fictional training institution (CTBE).
 <summary><b>💊 PMAFS — Pharmacy Medicine Availability Finding System</b> — click to expand</summary>
 <br/>
 
-A pharmacy network API for Addis Ababa — which pharmacies carry which medicines, at what price, and how trustworthy that stock info is. Two pieces: **PMFCore**, where I prototype the domain rules on their own, and **PMFApi**, the real ASP.NET Core Web API with a TypeScript client on top. PMFApi is still mid-split on the `Pmf-Split-in-CleanArchitecture` branch, moving into four layered projects (Domain/Application/Infrastructure/Api). Once that lands, the next stop is Pmf-Clients-2 — bringing the Angular frontend up to speed with the new API shape.
+A pharmacy network API for Addis Ababa — which pharmacies carry which medicines, at what price, and how trustworthy that stock info is. Two pieces: **PMFCore**, where I prototype the domain rules on their own, and **PMFApi**, the real ASP.NET Core Web API with a TypeScript client on top. PMFApi is on the `Pmf-Split-in-CleanArchitecture` branch, moving into four layered projects (Domain/Application/Infrastructure/Api). Alongside it, Pmf-Clients-2 — the Angular frontend — is under way on the `Pmf-Client-12` branch.
 
 | Layer | Highlights |
 |---|---|
@@ -66,12 +76,13 @@ A pharmacy network API for Addis Ababa — which pharmacies carry which medicine
 | **API (PMFApi)** *(in progress)* | EF Core + PostgreSQL, versioned CRUD across Pharmacies, Medicines, Inventory, Locations, Users. Mid-split into 4-project Clean Architecture |
 | **Data & Auditing** | Every inventory price change logged via `InventoryHistory`. `Location` records carry subcity, woreda, lat/long for proximity search |
 | **Auth** | Custom header-based `PharmacyAuthHandler`, four roles: Patient, Pharmacy Staff, Pharmacy Admin, System Admin |
-| **Client (Pmf-Client)** *(next up)* | TypeScript 7.0, discriminated unions with the Temporal API, Angular reactive forms — Pmf-Clients-2 rebuild queued after the API split |
+| **Client (Pmf-Client / Pmf-Clients-2)** *(in progress)* | Pmf-Client: TypeScript 7.0, discriminated unions with the Temporal API, Angular reactive forms. Pmf-Clients-2: the Angular 22.1 + Angular Material rebuild, under way |
 
 **Repos:**
 [![PMFApi](https://img.shields.io/badge/PMFApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFApi)
 [![PMFCore](https://img.shields.io/badge/PMFCore-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFCore)
 [![Pmf-Client](https://img.shields.io/badge/Pmf--Client-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/Pmf-Client)
+[![Pmf-Clients-2](https://img.shields.io/badge/Pmf--Clients--2-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/Pmf-Clients-2)
 
 </details>
 
