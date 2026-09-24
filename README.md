@@ -10,7 +10,7 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=kaluabiyu-wq&color=512BD4&style=for-the-badge&label=PROFILE+VIEWS)
 [![GitHub followers](https://img.shields.io/github/followers/kaluabiyu-wq?label=Followers&style=for-the-badge&color=DD0031)](https://github.com/kaluabiyu-wq?tab=followers)
-[![Public Repos](https://img.shields.io/badge/dynamic/json?label=Repos&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fkaluabiyu-wq&color=512BD4&style=for-the-badge)](https://github.com/kaluabiyu-wq?tab=repositories)
+[![Public Repos](https://img.shields.io/badge/dynamic/json?label=Public%20Repos&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fkaluabiyu-wq&color=512BD4&style=for-the-badge)](https://github.com/kaluabiyu-wq?tab=repositories)
 ![Open to Work](https://img.shields.io/badge/Open%20to%20Work-success?style=for-the-badge&logo=briefcase&logoColor=white)
 
 </div>
@@ -23,7 +23,7 @@ Fullstack developer building production-style applications end-to-end on the .NE
 
 - 🎓 Going through a fullstack curriculum: C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 + PostgreSQL, Angular 22
 - 🏗️ **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + a zoneless Angular 22 client (signals, NgRx SignalStore, a `@defer`-loaded analytics dashboard)
-- 💊 **PMAFS (Pharmacy Medicine Availability Finding System)** — a location-aware pharmacy stock finder for Addis Ababa, built alongside the curriculum on the same module structure. Splitting PMFApi out of its old single-project layout into Clean Architecture (Domain/Application/Infrastructure/Api), same move TMS made earlier — with Pmf-Clients-2 (the Angular frontend) now under way alongside it
+- 💊 **PMAFS (Pharmacy Medicine Availability Finding System)** — a location-aware pharmacy stock finder for Addis Ababa, built alongside the curriculum on the same module structure. PMFApi is being split out of its old single-project layout into Clean Architecture (Domain/Application/Infrastructure/Api), the same move TMS made earlier, with Pmf-Clients-2 (the Angular frontend) under way alongside it. 🔒 **PMFApi and Pmf-Clients-2 are private repositories** — I'm happy to walk through the code or discuss the architecture on request
 - 📍 Addis Ababa, Ethiopia
 
 ---
@@ -35,7 +35,7 @@ Fullstack developer building production-style applications end-to-end on the .NE
 | Project | Where it stands |
 |---|---|
 | 🎓 **TMS** | **Module 12, Session 2 complete — frontend testing.** Vitest specs for signal-input components and NgRx SignalStores, HTTP-boundary specs, Playwright E2E with shared login state (happy-path admin-approve flow + forced-500 error-banner spec), and a new `MaxEnrollmentsPerStudent` rule written test-first. Builds on M11's JWT + resource-based policy work |
-| 💊 **PMAFS** | **Pmf-Clients-2 (the Angular frontend) is now under way** on the `Pmf-Client-12` branch — Angular 22.1 with Angular Material/CDK, RxJS and Vitest. In parallel, **PMFApi is being layered into Clean Architecture** on the `Pmf-Split-in-CleanArchitecture` branch — `PmfApi.Domain`, `PmfApi.Application`, `PmfApi.Infrastructure` and `PmfApi.Api` are in place |
+| 💊 **PMAFS** 🔒 | **Pmf-Clients-2 (the Angular frontend) is under way** on the `Pmf-Client-12` branch — Angular 22.1 with Angular Material/CDK, RxJS and Vitest. In parallel, **PMFApi is being layered into Clean Architecture** on the `Pmf-Split-in-CleanArchitecture` branch — `PmfApi.Domain`, `PmfApi.Application`, `PmfApi.Infrastructure` and `PmfApi.Api` are in place. *Both repos are private.* The public repos for this project are PMFCore (domain prototype) and Pmf-Client (TypeScript client) |
 | 🔎 **Open to** | Fullstack roles in .NET and Angular — see [Contact](#-contact-me) |
 
 ---
@@ -68,21 +68,23 @@ Course enrollment platform for a fictional training institution (CTBE).
 <summary><b>💊 PMAFS — Pharmacy Medicine Availability Finding System</b> — click to expand</summary>
 <br/>
 
-A pharmacy network API for Addis Ababa — which pharmacies carry which medicines, at what price, and how trustworthy that stock info is. Two pieces: **PMFCore**, where I prototype the domain rules on their own, and **PMFApi**, the real ASP.NET Core Web API with a TypeScript client on top. PMFApi is on the `Pmf-Split-in-CleanArchitecture` branch, moving into four layered projects (Domain/Application/Infrastructure/Api). Alongside it, Pmf-Clients-2 — the Angular frontend — is under way on the `Pmf-Client-12` branch.
+A pharmacy network platform for Addis Ababa — which pharmacies carry which medicines, at what price, and how trustworthy that stock info is. Four pieces: **PMFCore**, where I prototype the domain rules on their own; **PMFApi**, the real ASP.NET Core Web API; **Pmf-Client**, a TypeScript client; and **Pmf-Clients-2**, the Angular frontend rebuild. PMFApi is on the `Pmf-Split-in-CleanArchitecture` branch, moving into four layered projects (Domain/Application/Infrastructure/Api), and Pmf-Clients-2 is under way on the `Pmf-Client-12` branch.
+
+> 🔒 **PMFApi and Pmf-Clients-2 are private repositories**, so they won't open from this page. PMFCore and Pmf-Client are public. If you'd like a walkthrough of the private code, get in touch — see [Contact](#-contact-me).
 
 | Layer | Highlights |
 |---|---|
 | **Domain (PMFCore)** | `PharmacyRank` score (stock freshness + recency → 1–4 tier), validation baked into the models, async batched lookups |
-| **API (PMFApi)** *(in progress)* | EF Core + PostgreSQL, versioned CRUD across Pharmacies, Medicines, Inventory, Locations, Users. Mid-split into 4-project Clean Architecture |
+| **API (PMFApi)** 🔒 *(in progress)* | EF Core + PostgreSQL, versioned CRUD across Pharmacies, Medicines, Inventory, Locations, Users. Mid-split into 4-project Clean Architecture |
 | **Data & Auditing** | Every inventory price change logged via `InventoryHistory`. `Location` records carry subcity, woreda, lat/long for proximity search |
 | **Auth** | Custom header-based `PharmacyAuthHandler`, four roles: Patient, Pharmacy Staff, Pharmacy Admin, System Admin |
-| **Client (Pmf-Client / Pmf-Clients-2)** *(in progress)* | Pmf-Client: TypeScript 7.0, discriminated unions with the Temporal API, Angular reactive forms. Pmf-Clients-2: the Angular 22.1 + Angular Material rebuild, under way |
+| **Clients** | **Pmf-Client** (public): TypeScript 7.0, discriminated unions with the Temporal API, Angular reactive forms. **Pmf-Clients-2** 🔒 *(in progress)*: the Angular 22.1 + Angular Material rebuild, under way |
 
 **Repos:**
-[![PMFApi](https://img.shields.io/badge/PMFApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFApi)
 [![PMFCore](https://img.shields.io/badge/PMFCore-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFCore)
 [![Pmf-Client](https://img.shields.io/badge/Pmf--Client-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/Pmf-Client)
-[![Pmf-Clients-2](https://img.shields.io/badge/Pmf--Clients--2-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/Pmf-Clients-2)
+![PMFApi — private](https://img.shields.io/badge/PMFApi-private-lightgrey?style=flat-square&logo=github)
+![Pmf-Clients-2 — private](https://img.shields.io/badge/Pmf--Clients--2-private-lightgrey?style=flat-square&logo=github)
 
 </details>
 
@@ -137,8 +139,8 @@ A pharmacy network API for Addis Ababa — which pharmacies carry which medicine
 <a href="https://github.com/kaluabiyu-wq/tms-clients2">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=tms-clients2&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="tms-clients2 repo card"/>
 </a>
-<a href="https://github.com/kaluabiyu-wq/PMFApi">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=PMFApi&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="PMFApi repo card"/>
+<a href="https://github.com/kaluabiyu-wq/PMFCore">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=PMFCore&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="PMFCore repo card"/>
 </a>
 
 </div>
@@ -163,6 +165,12 @@ Yes — especially fullstack roles in .NET and Angular. Email or LinkedIn above 
 <summary><b>What's the tech stack behind TMS, in one line?</b></summary>
 <br/>
 ASP.NET Core 10 (Clean Architecture, CQRS/MediatR, SignalR) talking to a zoneless Angular 22 client (signals, NgRx SignalStore), backed by Vitest + Playwright.
+</details>
+
+<details>
+<summary><b>Why can't I open PMFApi or Pmf-Clients-2?</b></summary>
+<br/>
+Both repositories are private. The public side of PMAFS is PMFCore (the domain prototype) and Pmf-Client (the TypeScript client). If you'd like to see the private code, reach out by email or LinkedIn and I'll walk you through it.
 </details>
 
 <details>
@@ -221,5 +229,3 @@ A casual hello, or what I'm up to outside of code.
 </td>
 </tr>
 </table>
-
----
