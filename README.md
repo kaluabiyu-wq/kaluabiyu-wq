@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%" alt="Kalu Abiyu — Fullstack .NET + Angular Developer"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Vitest+%2B+Playwright+E2E+%E2%80%94+M12;Building+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG — Building TMS with ASP.NET Core 10 and Angular 22" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Vitest+%2B+Playwright+E2E+%E2%80%94+M12;Building+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;PMFApi+Split+into+Clean+Architecture+%2B+Angular+Frontend;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG — Building TMS with ASP.NET Core 10 and Angular 22" />
 </a>
 
 <br/>
@@ -23,19 +23,19 @@ Fullstack developer building production-style applications end-to-end on the .NE
 
 - 🎓 Going through a fullstack curriculum: C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 + PostgreSQL, Angular 22
 - 🏗️ **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + a zoneless Angular 22 client (signals, NgRx SignalStore, a `@defer`-loaded analytics dashboard)
-- 💊 **PMAFS (Pharmacy Medicine Availability Finding System)** — a location-aware pharmacy stock finder for Addis Ababa, built alongside the curriculum on the same module structure. PMFApi is being split out of its old single-project layout into Clean Architecture (Domain/Application/Infrastructure/Api), the same move TMS made earlier, with Pmf-Clients-2 (the Angular frontend) under way alongside it. 🔒 **PMFApi and Pmf-Clients-2 are private repositories** — I'm happy to walk through the code or discuss the architecture on request
+- 💊 **PMAFS (Pharmacy Medicine Availability Finding System)** — a location-aware pharmacy stock finder for Addis Ababa, built alongside the curriculum on the same module structure. PMFApi is being split out of its old single-project layout into Clean Architecture (Domain/Application/Infrastructure/Api), the same move TMS made earlier, with Pmf-Clients-2 (the Angular frontend) under way alongside it. 
 - 📍 Addis Ababa, Ethiopia
 
 ---
 
 ## 📍 Current Status
 
-*Last updated: September 2026*
+*Last updated: September , 2026*
 
 | Project | Where it stands |
 |---|---|
-| 🎓 **TMS** | **Module 12, Session 2 complete — frontend testing.** Vitest specs for signal-input components and NgRx SignalStores, HTTP-boundary specs, Playwright E2E with shared login state (happy-path admin-approve flow + forced-500 error-banner spec), and a new `MaxEnrollmentsPerStudent` rule written test-first. Builds on M11's JWT + resource-based policy work |
-| 💊 **PMAFS** 🔒 | **Pmf-Clients-2 (the Angular frontend) is under way** on the `Pmf-Client-12` branch — Angular 22.1 with Angular Material/CDK, RxJS and Vitest. In parallel, **PMFApi is being layered into Clean Architecture** on the `Pmf-Split-in-CleanArchitecture` branch — `PmfApi.Domain`, `PmfApi.Application`, `PmfApi.Infrastructure` and `PmfApi.Api` are in place. *Both repos are private.* The public repos for this project are PMFCore (domain prototype) and Pmf-Client (TypeScript client) |
+| 🎓 **TMS** | **Module 12, Session 2 complete — frontend testing.** Vitest specs for signal-input components and NgRx SignalStores, HTTP-boundary specs against `HttpTestingController`, Playwright E2E with shared `storageState` login (happy-path admin-approve flow + forced-500 error-banner spec), and a new `MaxEnrollmentsPerStudent` rule written test-first. Builds on M11's JWT + resource-based policy work |
+| 💊 **PMAFS** | **Pmf-Clients-2 (the Angular frontend) is under way** on the `Pmf-Client-12` branch — Angular 22.1 with Angular Material/CDK, RxJS and Vitest. In parallel, **PMFApi is being layered into Clean Architecture** on the `Pmf-Split-in-CleanArchitecture` branch — `PmfApi.Domain`, `PmfApi.Application`, `PmfApi.Infrastructure` and `PmfApi.Api` are in place. |
 | 🔎 **Open to** | Fullstack roles in .NET and Angular — see [Contact](#-contact-me) |
 
 ---
@@ -50,11 +50,11 @@ Course enrollment platform for a fictional training institution (CTBE).
 
 | Layer | Highlights |
 |---|---|
-| **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — Clean Architecture, CQRS/MediatR, versioned endpoints, ProblemDetails |
-| **Real-time** | SignalR hubs for enrollment/transcript/grade updates, async request-reply for longer jobs |
-| **Client** | Angular 22, zoneless, signals, NgRx SignalStore — instructor dashboard, live SignalR sync |
-| **Auth & Security** | JWT with refresh rotation, resource-based policies, route guards, rate limiting, security headers |
-| **Testing** *(M12)* | Vitest for components/stores, Playwright E2E, shared login state across a setup project |
+| **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — layered Clean Architecture (Domain/Application/Infrastructure/Api), CQRS/MediatR, FluentValidation, HATEOAS, versioned REST endpoints, RFC 9457 ProblemDetails |
+| **Real-time** | SignalR typed hubs (`ITmsHubClient`) for enrollment/transcript/grade updates, async request-reply with idempotency keys for longer jobs |
+| **Client** | Angular 22, zoneless, signals, NgRx SignalStore, reactive forms, Angular Material — instructor analytics dashboard (`@defer`-loaded, live Approved/Pending/Rejected chart), defensive RxJS (`exhaustMap` rage-click guards, `takeUntilDestroyed`), and a `LiveSyncService` bridging SignalR push events into the store |
+| **Auth & Security** | M10: HttpOnly cookie + antiforgery (XSRF) handshake. M11: JWT Bearer with refresh rotation, resource-based policies (`CourseInstructorHandler`), route guards + JWT interceptor, named rate-limit policies, security-headers middleware |
+| **Testing** *(M12)* | Vitest for signal-input components and stores, `HttpTestingController` boundary specs, Playwright E2E covering happy-path and forced-5xx journeys, shared login state via a `setup` project dependency |
 
 **Repos:**
 [![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
@@ -70,21 +70,19 @@ Course enrollment platform for a fictional training institution (CTBE).
 
 A pharmacy network platform for Addis Ababa — which pharmacies carry which medicines, at what price, and how trustworthy that stock info is. Four pieces: **PMFCore**, where I prototype the domain rules on their own; **PMFApi**, the real ASP.NET Core Web API; **Pmf-Client**, a TypeScript client; and **Pmf-Clients-2**, the Angular frontend rebuild. PMFApi is on the `Pmf-Split-in-CleanArchitecture` branch, moving into four layered projects (Domain/Application/Infrastructure/Api), and Pmf-Clients-2 is under way on the `Pmf-Client-12` branch.
 
-> 🔒 **PMFApi and Pmf-Clients-2 are private repositories**, so they won't open from this page. PMFCore and Pmf-Client are public. If you'd like a walkthrough of the private code, get in touch — see [Contact](#-contact-me).
-
 | Layer | Highlights |
 |---|---|
-| **Domain (PMFCore)** | `PharmacyRank` score (stock freshness + recency → 1–4 tier), validation baked into the models, async batched lookups |
-| **API (PMFApi)** 🔒 *(in progress)* | EF Core + PostgreSQL, versioned CRUD across Pharmacies, Medicines, Inventory, Locations, Users. Mid-split into 4-project Clean Architecture |
-| **Data & Auditing** | Every inventory price change logged via `InventoryHistory`. `Location` records carry subcity, woreda, lat/long for proximity search |
+| **Domain (PMFCore)** | `PharmacyRank` score (stock freshness + recency → 1–4 reliability tier), validation baked into the models (no price ≤ 10, no blank names, reliability clamped to 1–100), LINQ grouping, async batched lookups (`Task.WhenAll`) |
+| **API (PMFApi)** *(in progress)* | EF Core + PostgreSQL (Npgsql), versioned CRUD across Pharmacies, Medicines, Inventory, Locations, Users, Roles, Pharmacy Schedules and User Feedback. Global `ProblemDetails` error handling, request-logging middleware, Scalar/OpenAPI docs. Mid-split into 4-project Clean Architecture |
+| **Data & Auditing** | Every inventory price change logged via `InventoryHistory` (old price, who, when). `Location` records carry subcity, woreda, lat/long for proximity search |
 | **Auth** | Custom header-based `PharmacyAuthHandler`, four roles: Patient, Pharmacy Staff, Pharmacy Admin, System Admin |
-| **Clients** | **Pmf-Client** (public): TypeScript 7.0, discriminated unions with the Temporal API, Angular reactive forms. **Pmf-Clients-2** 🔒 *(in progress)*: the Angular 22.1 + Angular Material rebuild, under way |
+| **Clients** | **Pmf-Client** (public): TypeScript 7.0, discriminated unions with the Temporal API, Angular reactive forms with `FormArray`. **Pmf-Clients-2** *(in progress)*: the Angular 22.1 + Angular Material rebuild, under way |
 
 **Repos:**
 [![PMFCore](https://img.shields.io/badge/PMFCore-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFCore)
 [![Pmf-Client](https://img.shields.io/badge/Pmf--Client-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/Pmf-Client)
-![PMFApi — private](https://img.shields.io/badge/PMFApi-private-lightgrey?style=flat-square&logo=github)
-![Pmf-Clients-2 — private](https://img.shields.io/badge/Pmf--Clients--2-private-lightgrey?style=flat-square&logo=github)
+[![PMFApi](https://img.shields.io/badge/PMFApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFApi)
+[![Pmf-Clients-2](https://img.shields.io/badge/Pmf--Clients--2-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/Pmf-Clients-2)
 
 </details>
 
@@ -153,24 +151,20 @@ A pharmacy network platform for Addis Ababa — which pharmacies carry which med
 <summary><b>What am I currently learning?</b></summary>
 <br/>
 Just wrapped Module 12, Session 2 — frontend testing. Building on M11's JWT/policy work: Vitest specs for signal-input components and NgRx SignalStores, HTTP boundary specs, and a Playwright E2E suite with shared login state — a happy-path admin-approve flow and a forced-500 spec to check the error banner. Also added a MaxEnrollmentsPerStudent rule, test-first.
+<br/><br/>
+On the PMAFS side, I'm layering PMFApi into Clean Architecture and building its Angular 22.1 frontend (Pmf-Clients-2) in parallel.
 </details>
 
 <details>
 <summary><b>Am I open to collaborating or job opportunities?</b></summary>
 <br/>
-Yes — especially fullstack roles in .NET and Angular. Email or LinkedIn above works.
+Yes — especially fullstack roles in .NET and Angular. Email or LinkedIn below works.
 </details>
 
 <details>
 <summary><b>What's the tech stack behind TMS, in one line?</b></summary>
 <br/>
 ASP.NET Core 10 (Clean Architecture, CQRS/MediatR, SignalR) talking to a zoneless Angular 22 client (signals, NgRx SignalStore), backed by Vitest + Playwright.
-</details>
-
-<details>
-<summary><b>Why can't I open PMFApi or Pmf-Clients-2?</b></summary>
-<br/>
-Both repositories are private. The public side of PMAFS is PMFCore (the domain prototype) and Pmf-Client (the TypeScript client). If you'd like to see the private code, reach out by email or LinkedIn and I'll walk you through it.
 </details>
 
 <details>
