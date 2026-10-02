@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=180&section=header&text=Kalu%20Abiyu&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%" alt="Kalu Abiyu — Fullstack .NET + Angular Developer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=200&section=header&text=Kalu%20Abiyu&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%" alt="Kalu Abiyu — Fullstack .NET + Angular Developer"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Bearer+Auth+%2B+Resource-Based+Policies+%E2%80%94+M11;Vitest+%2B+Playwright+E2E+%E2%80%94+M12;Building+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;PMFApi+Split+into+Clean+Architecture+%2B+Angular+Frontend;NgRx+SignalStore+%7C+Zoneless+Angular+%7C+Reactive+Forms;Always+learning%2C+always+shipping." alt="Typing SVG — Building TMS with ASP.NET Core 10 and Angular 22" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Building+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;Vitest+%2B+Playwright+E2E+Testing;Always+learning%2C+always+shipping." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -17,174 +17,14 @@
 
 ---
 
-## 👋 About Me
+# 👋 About Me
 
-Fullstack developer building production-style applications end-to-end on the .NET + Angular stack — from API and database design through to the client — with a strong interest in system architecture.
+I'm a fullstack developer from Addis Ababa. I build software end to end: a database schema I can defend, an API that decides exactly who can do what, and a UI that stays fast as data changes. My tools are .NET, Angular, and PostgreSQL, and I'm most drawn to problems where software meets a real local need, like finding which nearby pharmacy has the medicine you need.
 
-- 🎓 Going through a fullstack curriculum: C# 14 / .NET 10, TypeScript, Git, ASP.NET Core 10, EF Core 10 + PostgreSQL, Angular 22
-- 🏗️ **TMS (Training Management System)** — ASP.NET Core 10 API (Clean Architecture, CQRS/MediatR, SignalR) + a zoneless Angular 22 client (signals, NgRx SignalStore, a `@defer`-loaded analytics dashboard)
-- 💊 **PMAFS (Pharmacy Medicine Availability Finding System)** — a location-aware pharmacy stock finder for Addis Ababa, built alongside the curriculum on the same module structure. PMFApi is being split out of its old single-project layout into Clean Architecture (Domain/Application/Infrastructure/Api), the same move TMS made earlier, while Pmf-Clients-2 (the Angular frontend) is built in parallel.
-- 📍 Addis Ababa, Ethiopia
-
----
-
-## 📍 Current Status
-
-*Last updated: October 2026*
-
-| Project | Where it stands |
-|---|---|
-| 🎓 **TMS** | **Module 12, Session 2 complete — frontend testing.** Vitest specs for signal-input components and NgRx SignalStores, HTTP-boundary specs against `HttpTestingController`, Playwright E2E with shared `storageState` login (happy-path admin-approve flow + forced-500 error-banner spec), and a new `MaxEnrollmentsPerStudent` rule written test-first. Builds on M11's JWT + resource-based policy work |
-| 💊 **PMAFS** | **Two tracks moving in parallel.** **PMFApi** is layered into Clean Architecture on the `Pmf-Split-in-CleanArchitecture` branch — `PmfApi.Domain`, `PmfApi.Application`, `PmfApi.Infrastructure` and `PmfApi.Api` are all in place. **Pmf-Clients-2** (the Angular 22.1 frontend, with Angular Material/CDK, RxJS and Vitest) is under way on the `Pmf-Client-12` branch |
-| 🔎 **Open to** | Fullstack roles in .NET and Angular — see [Contact](#-contact-me) |
-
----
-
-## 🚀 Featured Projects
-
-<details open>
-<summary><b>🎓 Training Management System (TMS)</b> — click to collapse</summary>
-<br/>
-
-Course enrollment platform for a fictional training institution (CTBE).
-
-| Layer | Highlights |
-|---|---|
-| **API** | ASP.NET Core 10, EF Core 10, PostgreSQL — layered Clean Architecture (Domain/Application/Infrastructure/Api), CQRS/MediatR, FluentValidation, HATEOAS, versioned REST endpoints, RFC 9457 ProblemDetails |
-| **Real-time** | SignalR typed hubs (`ITmsHubClient`) for enrollment/transcript/grade updates, async request-reply with idempotency keys for longer jobs |
-| **Client** | Angular 22, zoneless, signals, NgRx SignalStore, reactive forms, Angular Material — instructor analytics dashboard (`@defer`-loaded, live Approved/Pending/Rejected chart), defensive RxJS (`exhaustMap` rage-click guards, `takeUntilDestroyed`), and a `LiveSyncService` bridging SignalR push events into the store |
-| **Auth & Security** | M10: HttpOnly cookie + antiforgery (XSRF) handshake. M11: JWT Bearer with refresh rotation, resource-based policies (`CourseInstructorHandler`), route guards + JWT interceptor, named rate-limit policies, security-headers middleware |
-| **Testing** *(M12)* | Vitest for signal-input components and stores, `HttpTestingController` boundary specs, Playwright E2E covering happy-path and forced-5xx journeys, shared login state via a `setup` project dependency |
-
-**Repos:**
-[![TmsApi](https://img.shields.io/badge/TmsApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsApi)
-[![tms-clients2](https://img.shields.io/badge/tms--clients2-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/tms-clients2)
-[![TmsCore](https://img.shields.io/badge/TmsCore-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/TmsCore)
-[![tms-client](https://img.shields.io/badge/tms--client-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/tms-client)
-
-</details>
-
-<details>
-<summary><b>💊 PMAFS — Pharmacy Medicine Availability Finding System</b> — click to expand</summary>
-<br/>
-
-A pharmacy network platform for Addis Ababa — which pharmacies carry which medicines, at what price, and how trustworthy that stock info is. Four pieces: **PMFCore**, where I prototype the domain rules on their own; **PMFApi**, the real ASP.NET Core Web API; **Pmf-Client**, a TypeScript client; and **Pmf-Clients-2**, the Angular frontend rebuild. PMFApi is on the `Pmf-Split-in-CleanArchitecture` branch, now layered into four projects (Domain/Application/Infrastructure/Api), and Pmf-Clients-2 is under way on the `Pmf-Client-12` branch.
-
-| Layer | Highlights |
-|---|---|
-| **Domain (PMFCore)** | `PharmacyRank` score (stock freshness + recency → 1–4 reliability tier), validation baked into the models (no price ≤ 10, no blank names, reliability clamped to 1–100), LINQ grouping, async batched lookups (`Task.WhenAll`) |
-| **API (PMFApi)** *(in progress)* | EF Core + PostgreSQL (Npgsql), versioned CRUD across Pharmacies, Medicines, Inventory, Locations, Users, Roles, Pharmacy Schedules and User Feedback. Global `ProblemDetails` error handling, request-logging middleware, Scalar/OpenAPI docs. Four-project Clean Architecture split (`PmfApi.Domain`/`Application`/`Infrastructure`/`Api`) in place on its branch |
-| **Data & Auditing** | Every inventory price change logged via `InventoryHistory` (old price, who, when). `Location` records carry subcity, woreda, lat/long for proximity search |
-| **Auth** | Custom header-based `PharmacyAuthHandler`, four roles: Patient, Pharmacy Staff, Pharmacy Admin, System Admin |
-| **Clients** | **Pmf-Client** (public): TypeScript 7.0, discriminated unions with the Temporal API, Angular reactive forms with `FormArray`. **Pmf-Clients-2** *(in progress)*: the Angular 22.1 + Angular Material rebuild, with Vitest for unit tests |
-
-**Repos:**
-[![PMFCore](https://img.shields.io/badge/PMFCore-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFCore)
-[![Pmf-Client](https://img.shields.io/badge/Pmf--Client-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/Pmf-Client)
-[![PMFApi](https://img.shields.io/badge/PMFApi-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/PMFApi)
-[![Pmf-Clients-2](https://img.shields.io/badge/Pmf--Clients--2-181717?style=flat-square&logo=github)](https://github.com/kaluabiyu-wq/Pmf-Clients-2)
-
-</details>
-
----
-
-## 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,postgres,angular,ts,git,html,css&theme=dark" alt="Tech stack icons: C#, .NET, PostgreSQL, Angular, TypeScript, Git, HTML, CSS"/>
-</p>
-
-<details>
-<summary><b>See full breakdown by category</b></summary>
-<br/>
-
-**Backend**
-![C#](https://img.shields.io/badge/-C%23-239120?style=flat&logo=c-sharp&logoColor=white)
-![.NET](https://img.shields.io/badge/-.NET%2010-512BD4?style=flat&logo=dotnet&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/-ASP.NET%20Core-512BD4?style=flat&logo=dotnet&logoColor=white)
-![EF Core](https://img.shields.io/badge/-EF%20Core-512BD4?style=flat)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![SignalR](https://img.shields.io/badge/-SignalR-512BD4?style=flat)
-![JWT](https://img.shields.io/badge/-JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
-
-**Frontend**
-![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat&logo=angular&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![NgRx](https://img.shields.io/badge/-NgRx%20SignalStore-BA2BD2?style=flat)
-![RxJS](https://img.shields.io/badge/-RxJS-B7178C?style=flat&logo=reactivex&logoColor=white)
-
-**Testing**
-![Vitest](https://img.shields.io/badge/-Vitest-6E9F18?style=flat&logo=vitest&logoColor=white)
-![Playwright](https://img.shields.io/badge/-Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
-
-**Tools & Practices**
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
-![Clean Architecture](https://img.shields.io/badge/-Clean%20Architecture-2E8B57?style=flat)
-![CQRS](https://img.shields.io/badge/-CQRS-2E8B57?style=flat)
-![MediatR](https://img.shields.io/badge/-MediatR-2E8B57?style=flat)
-
-</details>
-
----
-
-## 📌 Pinned Repos
-
-<div align="center">
-
-<a href="https://github.com/kaluabiyu-wq/TmsApi">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=TmsApi&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="TmsApi repo card"/>
-</a>
-<a href="https://github.com/kaluabiyu-wq/tms-clients2">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=tms-clients2&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="tms-clients2 repo card"/>
-</a>
-<a href="https://github.com/kaluabiyu-wq/PMFApi">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=PMFApi&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="PMFApi repo card"/>
-</a>
-<a href="https://github.com/kaluabiyu-wq/Pmf-Clients-2">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kaluabiyu-wq&repo=Pmf-Clients-2&theme=tokyonight&hide_border=true&cache_seconds=86400" width="48%" alt="Pmf-Clients-2 repo card"/>
-</a>
-
-</div>
-
----
-
-## ❓ FAQ
-
-<details>
-<summary><b>What am I currently learning?</b></summary>
-<br/>
-Just wrapped Module 12, Session 2 — frontend testing. Building on M11's JWT/policy work: Vitest specs for signal-input components and NgRx SignalStores, HTTP boundary specs, and a Playwright E2E suite with shared login state — a happy-path admin-approve flow and a forced-500 spec to check the error banner. Also added a MaxEnrollmentsPerStudent rule, test-first.
-<br/><br/>
-On the PMAFS side, PMFApi is now layered into Clean Architecture and I'm building its Angular 22.1 frontend (Pmf-Clients-2) in parallel.
-</details>
-
-<details>
-<summary><b>Am I open to collaborating or job opportunities?</b></summary>
-<br/>
-Yes — especially fullstack roles in .NET and Angular. Email or LinkedIn below works.
-</details>
-
-<details>
-<summary><b>What's the tech stack behind TMS, in one line?</b></summary>
-<br/>
-ASP.NET Core 10 (Clean Architecture, CQRS/MediatR, SignalR) talking to a zoneless Angular 22 client (signals, NgRx SignalStore), backed by Vitest + Playwright.
-</details>
-
-<details>
-<summary><b>How can you support this profile?</b></summary>
-<br/>
-Starring the repos above helps the most — it's the strongest signal for both GitHub's discovery and anyone evaluating the work. A follow keeps you posted as new modules ship.
-</details>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=kaluabiyu-wq&theme=tokyonight&hide_border=true&disable_animations=true" width="49%" alt="Kalu's GitHub streak stats"/>
-
-</div>
+- 🎓 BSc in Computer Science (2026)
+- 📚 Currently studying: C# 14 / .NET 10, TypeScript, ASP.NET Core 10, EF Core 10, PostgreSQL, Angular 22
+- 🧱 Focused on clean architecture, secure APIs, and code that is easy to change
+- 📍 Addis Ababa, Ethiopia (UTC+3)
 
 ---
 
@@ -192,37 +32,126 @@ Starring the repos above helps the most — it's the strongest signal for both G
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-kaluabiyu%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaluabiyu@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kalu--abiyu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kalu-abiyu)
-[![Instagram](https://img.shields.io/badge/Instagram-Kalu__abi77-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/Kalu_abi77)
+**Open to fullstack roles in .NET and Angular, and always glad to talk code.**<br/>
+Pick the channel that suits you and say hello.
+
+<br/>
+
+<table>
+  <tr>
+    <td align="center" width="33%" valign="top">
+      <br/>
+      <a href="mailto:kaluabiyu@gmail.com?subject=Hello%20Kalu">
+        <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+      </a>
+      <br/><br/>
+      <b>Job offers and collaboration</b><br/>
+      <sub>The best place for anything detailed</sub><br/>
+      <a href="mailto:kaluabiyu@gmail.com?subject=Hello%20Kalu"><sub>kaluabiyu@gmail.com</sub></a>
+      <br/><br/>
+    </td>
+    <td align="center" width="33%" valign="top">
+      <br/>
+      <a href="https://linkedin.com/in/kalu-abiyu">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+      </a>
+      <br/><br/>
+      <b>Professional networking</b><br/>
+      <sub>Connect, follow my progress, or message me</sub><br/>
+      <a href="https://linkedin.com/in/kalu-abiyu"><sub>in/kalu-abiyu</sub></a>
+      <br/><br/>
+    </td>
+    <td align="center" width="33%" valign="top">
+      <br/>
+      <a href="https://instagram.com/Kalu_abi77">
+        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+      </a>
+      <br/><br/>
+      <b>Casual chats</b><br/>
+      <sub>A friendlier, more relaxed way to reach me</sub><br/>
+      <a href="https://instagram.com/Kalu_abi77"><sub>@Kalu_abi77</sub></a>
+      <br/><br/>
+    </td>
+  </tr>
+</table>
+
+📍 Addis Ababa, Ethiopia (UTC+3) &nbsp;·&nbsp; 🌍 Remote &nbsp;·&nbsp; 🏢 Hybrid &nbsp;·&nbsp; 💼 On-site
 
 </div>
 
-<table align="center">
-<tr>
-<td align="center" width="33%">
+---
 
-**📧 Email**
-<br/>
-Job offers, collaboration, anything that needs a real reply.
-<br/>
-<a href="mailto:kaluabiyu@gmail.com">kaluabiyu@gmail.com</a>
-</td>
-<td align="center" width="33%">
+# 💻 Tech Stack
 
-**💼 LinkedIn**
-<br/>
-Professional networking and recruiter outreach.
-<br/>
-<a href="https://linkedin.com/in/kalu-abiyu">/in/kalu-abiyu</a>
-</td>
-<td align="center" width="33%">
+<div align="center">
 
-**📸 Instagram**
-<br/>
-A casual hello, or what I'm up to outside of code.
-<br/>
-<a href="https://instagram.com/Kalu_abi77">@Kalu_abi77</a>
-</td>
-</tr>
+<table>
+  <tr>
+    <td align="center" width="22%"><b>⚙️ Back-end</b></td>
+    <td align="left">
+      <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" alt="C#"/>
+      <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET"/>
+      <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge" alt="ASP.NET Core"/>
+      <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge" alt="EF Core"/>
+      <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+      <img src="https://img.shields.io/badge/SignalR-512BD4?style=for-the-badge" alt="SignalR"/>
+      <img src="https://img.shields.io/badge/MediatR-512BD4?style=for-the-badge" alt="MediatR"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>🎨 Front-end</b></td>
+    <td align="left">
+      <img src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"/>
+      <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+      <img src="https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white" alt="RxJS"/>
+      <img src="https://img.shields.io/badge/NgRx%20SignalStore-BA2BD2?style=for-the-badge" alt="NgRx SignalStore"/>
+      <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+      <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>🧪 Testing</b></td>
+    <td align="left">
+      <img src="https://img.shields.io/badge/-Vitest-252529?style=for-the-badge&logo=vitest&logoColor=FCC72B" alt="Vitest"/>
+      <img src="https://img.shields.io/badge/-playwright-%232EAD33?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>🛠️ Tools &amp; Practices</b></td>
+    <td align="left">
+      <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+      <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+      <img src="https://img.shields.io/badge/Clean%20Architecture-512BD4?style=for-the-badge" alt="Clean Architecture"/>
+      <img src="https://img.shields.io/badge/CQRS-DD0031?style=for-the-badge" alt="CQRS"/>
+      <img src="https://img.shields.io/badge/REST%20APIs-512BD4?style=for-the-badge" alt="REST APIs"/>
+      <img src="https://img.shields.io/badge/JWT%20Auth-512BD4?style=for-the-badge" alt="JWT Auth"/>
+    </td>
+  </tr>
 </table>
+
+</div>
+
+---
+
+# 📊 GitHub Stats
+<div align="center">
+
+![](https://github-readme-stats.shion.dev/api?username=kaluabiyu-wq&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=kaluabiyu-wq&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact)<br/>
+![](https://streak-stats.demolab.com/?user=kaluabiyu-wq&theme=tokyonight&hide_border=true)<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=kaluabiyu-wq&theme=tokyo-night&hide_border=true&area=true" width="95%" alt="Contribution activity graph"/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=kaluabiyu-wq&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub trophies"/>
+
+</div>
+
+---
+
+<div align="center">
+
+⭐ If something here is useful, a star or a follow is always appreciated.
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=100&section=footer" width="100%" alt="footer"/>
+
+</div>
