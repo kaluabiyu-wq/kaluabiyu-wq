@@ -22,7 +22,7 @@
 I'm a fullstack developer from Addis Ababa. I build software end to end: a database schema I can defend, an API that decides exactly who can do what, and a UI that stays fast as data changes. My tools are .NET, Angular, and PostgreSQL, and I'm most drawn to problems where software meets a real local need, like finding which nearby pharmacy has the medicine you need.
 
 - 🎓 BSc in Computer Science (2026)
-- 📚 Currently studying: C# 14 / .NET 10, TypeScript, ASP.NET Core 10, EF Core 10, PostgreSQL, Angular 22
+- 📚 Currently working: C# 14 / .NET 10, TypeScript, ASP.NET Core 10, EF Core 10, PostgreSQL, Angular 22
 - 🧱 Focused on clean architecture, secure APIs, and code that is easy to change
 - 📍 Addis Ababa, Ethiopia (UTC+3)
 
