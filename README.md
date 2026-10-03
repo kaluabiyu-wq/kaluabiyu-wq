@@ -140,9 +140,6 @@ Pick the channel that suits you and say hello.
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=kaluabiyu-wq&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact)<br/>
 ![](https://streak-stats.demolab.com/?user=kaluabiyu-wq&theme=tokyonight&hide_border=true)<br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=kaluabiyu-wq&theme=tokyo-night&hide_border=true&area=true" width="95%" alt="Contribution activity graph"/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=kaluabiyu-wq&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub trophies"/>
 
 </div>
 
