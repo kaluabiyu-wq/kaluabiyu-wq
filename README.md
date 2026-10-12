@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=200&section=header&text=Kalu%20Abiyu&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%" alt="Kalu Abiyu — Fullstack .NET + Angular Developer"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=650&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;Building+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;Vitest+%2B+Playwright+E2E+Testing;Always+learning%2C+always+shipping." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=700&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Auth+%7C+Policy-Based+Authorization+%7C+Rate+Limiting;Building+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;xUnit+%2B+Vitest+%2B+Playwright+Testing;Always+learning%2C+always+shipping." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -23,10 +23,11 @@ I'm a fullstack developer from Addis Ababa. I build software end to end: a datab
 
 - 🎓 BSc in Computer Science (2026)
 - 📚 Currently working: C# 14 / .NET 10, TypeScript, ASP.NET Core 10, EF Core 10, PostgreSQL, Angular 22
+- 🏗️ Building **TMS**, a Training Management System: a layered ASP.NET Core 10 API with an Angular 22 client, now deployed to Render
+- 💊 Building **PMAFS**, a pharmacy medicine availability finder for Addis Ababa, as a parallel project that mirrors the TMS module structure
+- 📱 Also exploring Flutter (Dart) and Bloc state management on the mobile side
 - 🧱 Focused on clean architecture, secure APIs, and code that is easy to change
 - 📍 Addis Ababa, Ethiopia (UTC+3)
-
----
 
 ## 📬 Contact Me
 
@@ -96,6 +97,7 @@ Pick the channel that suits you and say hello.
       <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
       <img src="https://img.shields.io/badge/SignalR-512BD4?style=for-the-badge" alt="SignalR"/>
       <img src="https://img.shields.io/badge/MediatR-512BD4?style=for-the-badge" alt="MediatR"/>
+      <img src="https://img.shields.io/badge/FluentValidation-512BD4?style=for-the-badge" alt="FluentValidation"/>
     </td>
   </tr>
   <tr>
@@ -105,13 +107,24 @@ Pick the channel that suits you and say hello.
       <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
       <img src="https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white" alt="RxJS"/>
       <img src="https://img.shields.io/badge/NgRx%20SignalStore-BA2BD2?style=for-the-badge" alt="NgRx SignalStore"/>
+      <img src="https://img.shields.io/badge/Angular%20Material-DD0031?style=for-the-badge" alt="Angular Material"/>
       <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
       <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
     </td>
   </tr>
   <tr>
+    <td align="center"><b>📱 Mobile</b></td>
+    <td align="left">
+      <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
+      <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart"/>
+      <img src="https://img.shields.io/badge/Bloc-02569B?style=for-the-badge" alt="Bloc"/>
+    </td>
+  </tr>
+  <tr>
     <td align="center"><b>🧪 Testing</b></td>
     <td align="left">
+      <img src="https://img.shields.io/badge/-xUnit-512BD4?style=for-the-badge" alt="xUnit"/>
+      <img src="https://img.shields.io/badge/-NSubstitute-512BD4?style=for-the-badge" alt="NSubstitute"/>
       <img src="https://img.shields.io/badge/-Vitest-252529?style=for-the-badge&logo=vitest&logoColor=FCC72B" alt="Vitest"/>
       <img src="https://img.shields.io/badge/-playwright-%232EAD33?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright"/>
     </td>
@@ -121,6 +134,7 @@ Pick the channel that suits you and say hello.
     <td align="left">
       <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
       <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+      <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black" alt="Render"/>
       <img src="https://img.shields.io/badge/Clean%20Architecture-512BD4?style=for-the-badge" alt="Clean Architecture"/>
       <img src="https://img.shields.io/badge/CQRS-DD0031?style=for-the-badge" alt="CQRS"/>
       <img src="https://img.shields.io/badge/REST%20APIs-512BD4?style=for-the-badge" alt="REST APIs"/>
@@ -132,6 +146,7 @@ Pick the channel that suits you and say hello.
 </div>
 
 ---
+
 
 # 📊 GitHub Stats
 <div align="center">
