@@ -23,7 +23,7 @@ I'm a fullstack developer from Addis Ababa. I build software end to end: a datab
 
 - 🎓 BSc in Computer Science (2026)
 - 📚 Currently working: C# 14 / .NET 10, TypeScript, ASP.NET Core 10, EF Core 10, PostgreSQL, Angular 22
-- 🏗️ Building **TMS**, a Training Management System: a layered ASP.NET Core 10 API with an Angular 22 client, now deployed to Render
+- 🏗️ Building **TMS**, a Training Management System: a layered ASP.NET Core 10 API with an Angular 22 client.
 - 💊 Building **PMAFS**, a pharmacy medicine availability finder for Addis Ababa, as a parallel project that mirrors the TMS module structure
 - 📱 Also exploring Flutter (Dart) and Bloc state management on the mobile side
 - 🧱 Focused on clean architecture, secure APIs, and code that is easy to change
