@@ -96,10 +96,6 @@ Pick the channel that suits you and say hello.
       <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge" alt="ASP.NET Core"/>
       <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge" alt="EF Core"/>
       <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-      <img src="https://img.shields.io/badge/SignalR-512BD4?style=for-the-badge" alt="SignalR"/>
-      <img src="https://img.shields.io/badge/MediatR-512BD4?style=for-the-badge" alt="MediatR"/>
-      <img src="https://img.shields.io/badge/FluentValidation-512BD4?style=for-the-badge" alt="FluentValidation"/>
-      <img src="https://img.shields.io/badge/Scalar%20%2F%20OpenAPI-512BD4?style=for-the-badge" alt="Scalar / OpenAPI"/>
     </td>
   </tr>
   <tr>
@@ -109,9 +105,6 @@ Pick the channel that suits you and say hello.
       <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"/>
       <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
       <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
-      <img src="https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white" alt="RxJS"/>
-      <img src="https://img.shields.io/badge/NgRx%20SignalStore-BA2BD2?style=for-the-badge" alt="NgRx SignalStore"/>
-      <img src="https://img.shields.io/badge/Angular%20Material-DD0031?style=for-the-badge" alt="Angular Material"/>
       <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
       <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
     </td>
@@ -142,10 +135,6 @@ Pick the channel that suits you and say hello.
       <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm"/>
       <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/>
       <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black" alt="Render"/>
-      <img src="https://img.shields.io/badge/Clean%20Architecture-512BD4?style=for-the-badge" alt="Clean Architecture"/>
-      <img src="https://img.shields.io/badge/CQRS-DD0031?style=for-the-badge" alt="CQRS"/>
-      <img src="https://img.shields.io/badge/REST%20APIs-512BD4?style=for-the-badge" alt="REST APIs"/>
-      <img src="https://img.shields.io/badge/JWT%20Auth-512BD4?style=for-the-badge" alt="JWT Auth"/>
     </td>
   </tr>
 </table>
