@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=200&section=header&text=Kalu%20Abiyu&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20.NET%20%2B%20Angular%20Developer&descAlignY=58&descSize=18" width="100%" alt="Kalu Abiyu — Fullstack Developer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,100:DD0031&height=200&section=header&text=Kalu%20Abiyu&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20Developer&descAlignY=58&descSize=18" width="100%" alt="Kalu Abiyu — Fullstack Developer"/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=512BD4&center=true&vCenter=true&width=700&lines=Building+TMS+%E2%80%94+ASP.NET+Core+10+%2B+Angular+22;Clean+Architecture+%7C+CQRS+%2F+MediatR+%7C+SignalR;JWT+Auth+%7C+Policy-Based+Authorization+%7C+Rate+Limiting;Building+PMAFS+%E2%80%94+Pharmacy+Stock+Finder+for+Addis+Ababa;xUnit+%2B+Vitest+%2B+Playwright+Testing;Always+learning%2C+always+shipping." alt="Typing SVG" />
