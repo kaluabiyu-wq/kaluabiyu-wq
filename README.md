@@ -25,7 +25,6 @@ I'm a fullstack developer from Addis Ababa. I build software end to end: a datab
 - 📚 Currently working: C# 14 / .NET 10, TypeScript, ASP.NET Core 10, EF Core 10, PostgreSQL, Angular 22
 - 🏗️ Building **TMS**, a Training Management System: a layered ASP.NET Core 10 API with an Angular 22 client.
 - 💊 Building **PMAFS**, a pharmacy medicine availability finder for Addis Ababa, as a parallel project that mirrors the TMS module structure
-- 🌐 Built my own [developer portfolio](https://kalu-iota.vercel.app) with React 18, TypeScript, and Vite
 - 📱 Also exploring Flutter (Dart) and Bloc state management on the mobile side
 - 🧱 Focused on clean architecture, secure APIs, and code that is easy to change
 - 📍 Addis Ababa, Ethiopia (UTC+3)
@@ -34,7 +33,7 @@ I'm a fullstack developer from Addis Ababa. I build software end to end: a datab
 
 <div align="center">
 
-**Open to fullstack roles in .NET and Angular, and always glad to talk code.**<br/>
+**Open to fullstack roles , and always glad to talk code.**<br/>
 Pick the channel that suits you and say hello.
 
 <br/>
