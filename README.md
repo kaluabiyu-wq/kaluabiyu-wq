@@ -62,17 +62,6 @@ Pick the channel that suits you and say hello.
       <a href="https://linkedin.com/in/kalu-abiyu"><sub>in/kalu-abiyu</sub></a>
       <br/><br/>
     </td>
-    <td align="center" width="33%" valign="top">
-      <br/>
-      <a href="https://instagram.com/Kalu_abi77">
-        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
-      </a>
-      <br/><br/>
-      <b>Casual chats</b><br/>
-      <sub>A friendlier, more relaxed way to reach me</sub><br/>
-      <a href="https://instagram.com/Kalu_abi77"><sub>@Kalu_abi77</sub></a>
-      <br/><br/>
-    </td>
   </tr>
 </table>
 
